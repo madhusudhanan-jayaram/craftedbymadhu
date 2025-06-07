@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -49,9 +50,10 @@ export const Contact = () => {
                       <Linkedin className="text-white" size={20} />
                     </div>
                     <div>
-                      <p className="font-semibold text-gray-800">LinkedIn
-https://www.linkedin.com/in/madhusudhanan-jeyaram</p>
-                      <a href="#" className="text-blue-600 hover:text-blue-700 font-medium hover:underline"></a>
+                      <p className="font-semibold text-gray-800">LinkedIn</p>
+                      <a href="https://www.linkedin.com/in/madhusudhanan-jeyaram" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 font-medium hover:underline">
+                        linkedin.com/in/madhusudhanan-jeyaram
+                      </a>
                     </div>
                   </div>
                   
@@ -61,7 +63,9 @@ https://www.linkedin.com/in/madhusudhanan-jeyaram</p>
                     </div>
                     <div>
                       <p className="font-semibold text-gray-800">GitHub</p>
-                      <a href="#" className="text-blue-600 hover:text-blue-700 font-medium hover:underline">https://github.com/madhusudhanan-jayaram/madhusudhanan-jayaram</a>
+                      <a href="https://github.com/madhusudhanan-jayaram" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 font-medium hover:underline">
+                        github.com/madhusudhanan-jayaram
+                      </a>
                     </div>
                   </div>
                 </CardContent>
