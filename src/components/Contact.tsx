@@ -1,11 +1,12 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, Linkedin, Github, Send } from "lucide-react";
+
 export const Contact = () => {
-  return <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 to-purple-50">
+  return (
+    <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 to-purple-50">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl lg:text-5xl font-bold text-center mb-16">
@@ -31,7 +32,9 @@ export const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-800">Email</p>
-                      <p className="text-gray-600">madhusudhanan.jayaram@gmail.com</p>
+                      <a href="mailto:madhusudhanan.jayaram@gmail.com" className="text-blue-600 hover:text-blue-700 font-medium hover:underline">
+                        madhusudhanan.jayaram@gmail.com
+                      </a>
                     </div>
                   </div>
                   
@@ -41,7 +44,7 @@ export const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-800">Phone</p>
-                      <p className="text-gray-600">+1 -972-946-6451</p>
+                      <p className="text-gray-600">+91-7305099315</p>
                     </div>
                   </div>
                   
@@ -117,5 +120,6 @@ export const Contact = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
