@@ -1,10 +1,77 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, Linkedin, Github, Send } from "lucide-react";
+import { useState } from "react";
+import emailjs from '@emailjs/browser';
+import { useToast } from "@/hooks/use-toast";
 
 export const Contact = () => {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const templateParams = {
+        from_name: `${formData.firstName} ${formData.lastName}`,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        to_name: 'Madhusudhanan'
+      };
+
+      await emailjs.send(
+        'service_3o5g6sa',
+        'template_jg91ngw',
+        templateParams,
+        'EZDH0mBAwhriVBeoq'
+      );
+
+      toast({
+        title: "Message sent successfully!",
+        description: "Thank you for your message. I'll get back to you soon.",
+      });
+
+      // Reset form
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error('Failed to send email:', error);
+      toast({
+        title: "Failed to send message",
+        description: "Please try again or contact me directly via email.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 to-purple-50">
       <div className="container mx-auto px-4">
@@ -85,36 +152,79 @@ export const Contact = () => {
                 </p>
               </CardHeader>
               <CardContent className="space-y-6 relative z-10">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="text-sm font-semibold text-gray-700 block mb-2">First Name</label>
-                    <Input placeholder="John" className="border-2 focus:border-purple-400" />
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div>
+                      <label className="text-sm font-semibold text-gray-700 block mb-2">First Name</label>
+                      <Input 
+                        name="firstName"
+                        value={formData.firstName}
+                        onChange={handleInputChange}
+                        placeholder="John" 
+                        className="border-2 focus:border-purple-400" 
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label className="text-sm font-semibold text-gray-700 block mb-2">Last Name</label>
+                      <Input 
+                        name="lastName"
+                        value={formData.lastName}
+                        onChange={handleInputChange}
+                        placeholder="Doe" 
+                        className="border-2 focus:border-purple-400" 
+                        required
+                      />
+                    </div>
                   </div>
+                  
                   <div>
-                    <label className="text-sm font-semibold text-gray-700 block mb-2">Last Name</label>
-                    <Input placeholder="Doe" className="border-2 focus:border-purple-400" />
+                    <label className="text-sm font-semibold text-gray-700 block mb-2">Email</label>
+                    <Input 
+                      type="email" 
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      placeholder="john.doe@example.com" 
+                      className="border-2 focus:border-purple-400" 
+                      required
+                    />
                   </div>
-                </div>
-                
-                <div>
-                  <label className="text-sm font-semibold text-gray-700 block mb-2">Email</label>
-                  <Input type="email" placeholder="john.doe@example.com" className="border-2 focus:border-purple-400" />
-                </div>
-                
-                <div>
-                  <label className="text-sm font-semibold text-gray-700 block mb-2">Subject</label>
-                  <Input placeholder="Project Discussion" className="border-2 focus:border-purple-400" />
-                </div>
-                
-                <div>
-                  <label className="text-sm font-semibold text-gray-700 block mb-2">Message</label>
-                  <Textarea placeholder="Tell me about your project or how we can collaborate..." rows={4} className="border-2 focus:border-purple-400" />
-                </div>
-                
-                <Button className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-semibold py-3 text-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <Send className="mr-2" size={20} />
-                  Send Message
-                </Button>
+                  
+                  <div>
+                    <label className="text-sm font-semibold text-gray-700 block mb-2">Subject</label>
+                    <Input 
+                      name="subject"
+                      value={formData.subject}
+                      onChange={handleInputChange}
+                      placeholder="Project Discussion" 
+                      className="border-2 focus:border-purple-400" 
+                      required
+                    />
+                  </div>
+                  
+                  <div>
+                    <label className="text-sm font-semibold text-gray-700 block mb-2">Message</label>
+                    <Textarea 
+                      name="message"
+                      value={formData.message}
+                      onChange={handleInputChange}
+                      placeholder="Tell me about your project or how we can collaborate..." 
+                      rows={4} 
+                      className="border-2 focus:border-purple-400" 
+                      required
+                    />
+                  </div>
+                  
+                  <Button 
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-semibold py-3 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                  >
+                    <Send className="mr-2" size={20} />
+                    {isSubmitting ? 'Sending...' : 'Send Message'}
+                  </Button>
+                </form>
               </CardContent>
             </Card>
           </div>
