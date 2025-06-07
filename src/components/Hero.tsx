@@ -4,7 +4,7 @@ import { ArrowDown, Upload, User, Play } from "lucide-react";
 import { useState, useRef } from "react";
 
 export const Hero = () => {
-  const [profileImage, setProfileImage] = useState<string | null>(null);
+  const [profileImage, setProfileImage] = useState<string | null>("https://i.postimg.cc/30pRNvt4/profile.jpg");
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const handleImageUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
