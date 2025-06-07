@@ -1,12 +1,9 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
-
 export const Projects = () => {
-  return (
-    <section id="portfolio" className="py-20 bg-slate-800">
+  return <section id="portfolio" className="py-20 bg-slate-800">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -250,14 +247,14 @@ export const Projects = () => {
                 <div>
                   <h4 className="font-semibold text-lg mb-3 text-slate-50">Technologies Used</h4>
                   <div className="flex flex-wrap gap-2">
-                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Node.js</Badge>
-                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">React Native</Badge>
-                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Microservices</Badge>
-                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Redis</Badge>
-                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">MongoDB</Badge>
-                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">GraphQL</Badge>
-                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Azure</Badge>
-                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Blockchain</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">JAVA</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">J2EE</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Oracle</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Choridant</Badge>
+                    
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Tibco</Badge>
+                    
+                    
                   </div>
                 </div>
               </CardContent>
@@ -265,6 +262,5 @@ export const Projects = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
