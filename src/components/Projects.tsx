@@ -20,11 +20,7 @@ export const Projects = () => {
             </CardHeader>
             
             <CardContent className="space-y-6">
-              <p className="text-muted-foreground leading-relaxed">
-                Led the comprehensive modernization of legacy banking systems, transforming 
-                outdated infrastructure into a robust, scalable Java/J2EE architecture with 
-                significant performance and cost improvements.
-              </p>
+              <p className="text-muted-foreground leading-relaxed">Led the modernization of critical banking applications (Collections, Recovery, Payments) by migrating legacy systems to Java/J2EE, delivering secure, scalable solutions that aligned with business goals. Drove technical excellence through architecture redesign, performance optimization, and cross-functional collaboration.</p>
               
               <div>
                 <h4 className="font-semibold text-lg mb-4">Key Achievements</h4>
@@ -32,9 +28,7 @@ export const Projects = () => {
                   <div className="space-y-3">
                     <div className="flex items-start">
                       <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-muted-foreground">
-                        Modernized legacy banking systems to Java/J2EE architecture
-                      </span>
+                      <span className="text-muted-foreground">Modernized legacy banking systems to Java/J2EE architecture</span>
                     </div>
                     <div className="flex items-start">
                       <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
