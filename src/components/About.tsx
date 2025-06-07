@@ -47,11 +47,7 @@ export const About = () => {
             <div className="space-y-6">
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-orange-400 mb-2">17+</div>
-                  <div className="text-slate-400">Years Experience</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-orange-400 mb-2">4+</div>
+                  <div className="text-3xl font-bold text-orange-400 mb-2">50+</div>
                   <div className="text-slate-400">Projects Completed</div>
                 </div>
                 <div className="text-center">
@@ -61,6 +57,10 @@ export const About = () => {
                 <div className="text-center">
                   <div className="text-3xl font-bold text-orange-400 mb-2">15+</div>
                   <div className="text-slate-400">AI Solutions Deployed</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-orange-400 mb-2">5+</div>
+                  <div className="text-slate-400">Awards Received</div>
                 </div>
               </div>
             </div>
