@@ -1,9 +1,12 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
+
 export const Projects = () => {
-  return <section id="projects" className="py-20">
+  return (
+    <section id="projects" className="py-20">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">
@@ -172,8 +175,100 @@ export const Projects = () => {
                 </div>
               </CardContent>
             </Card>
+
+            {/* Digital Banking Platform */}
+            <Card className="relative overflow-hidden">
+              {/* Background decoration */}
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-purple-100 to-pink-100 rounded-full -translate-y-16 translate-x-16 opacity-50"></div>
+              
+              <CardHeader>
+                <CardTitle className="text-2xl">Digital Banking Platform</CardTitle>
+                <p className="text-lg text-purple-600 font-semibold">Multi-Tenant SaaS - Cloud-Native Architecture</p>
+              </CardHeader>
+              
+              <CardContent className="space-y-6">
+                <p className="text-muted-foreground leading-relaxed">Designed and implemented a comprehensive digital banking platform serving multiple financial institutions. Built with microservices architecture on cloud infrastructure, the platform provides white-label banking solutions with real-time transaction processing, advanced analytics, and seamless third-party integrations.</p>
+                
+                <div>
+                  <h4 className="font-semibold text-lg mb-4">Platform Capabilities</h4>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="space-y-3">
+                      <div className="flex items-start">
+                        <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span className="text-muted-foreground">Multi-tenant architecture with customizable branding</span>
+                      </div>
+                      <div className="flex items-start">
+                        <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span className="text-muted-foreground">
+                          Real-time transaction processing and settlement
+                        </span>
+                      </div>
+                      <div className="flex items-start">
+                        <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span className="text-muted-foreground">
+                          Advanced fraud detection and monitoring
+                        </span>
+                      </div>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="flex items-start">
+                        <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span className="text-muted-foreground">
+                          Open Banking API integrations
+                        </span>
+                      </div>
+                      <div className="flex items-start">
+                        <div className="w-2 h-2 bg-pink-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span className="text-muted-foreground">
+                          Mobile-first responsive design
+                        </span>
+                      </div>
+                      <div className="flex items-start">
+                        <div className="w-2 h-2 bg-indigo-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span className="text-muted-foreground">
+                          Comprehensive analytics dashboard
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-lg">
+                  <h4 className="font-semibold text-lg mb-3 text-purple-700">Performance Metrics</h4>
+                  <div className="grid md:grid-cols-3 gap-4">
+                    <div className="text-center">
+                      <div className="text-3xl font-bold text-purple-600">50+</div>
+                      <div className="text-sm text-muted-foreground">Partner Banks</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-3xl font-bold text-blue-600">2M+</div>
+                      <div className="text-sm text-muted-foreground">Active Users</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-3xl font-bold text-green-600">99.9%</div>
+                      <div className="text-sm text-muted-foreground">API Uptime</div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 className="font-semibold text-lg mb-3">Technologies Used</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="secondary">Node.js</Badge>
+                    <Badge variant="secondary">React Native</Badge>
+                    <Badge variant="secondary">Microservices</Badge>
+                    <Badge variant="secondary">Redis</Badge>
+                    <Badge variant="secondary">MongoDB</Badge>
+                    <Badge variant="secondary">GraphQL</Badge>
+                    <Badge variant="secondary">Azure</Badge>
+                    <Badge variant="secondary">Blockchain</Badge>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
