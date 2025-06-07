@@ -1,8 +1,10 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { GraduationCap, Target, Heart, MapPin, Calendar, Mail, Phone } from "lucide-react";
+
 export const About = () => {
-  return <section id="about" className="py-20 bg-slate-900">
+  return (
+    <section id="about" className="py-20 bg-slate-900">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -57,17 +59,14 @@ export const About = () => {
                   <div className="text-slate-400">Team Members Led</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-orange-400 mb-2">0+</div>
+                  <div className="text-3xl font-bold text-orange-400 mb-2">15+</div>
                   <div className="text-slate-400">AI Solutions Deployed</div>
                 </div>
               </div>
-
-              <Card className="bg-slate-800 border-slate-700">
-                
-              </Card>
             </div>
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
