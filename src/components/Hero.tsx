@@ -37,13 +37,14 @@ export const Hero = () => {
                     <span className="text-orange-400">Jeyaram</span>
                   </h1>
                   <p className="text-2xl lg:text-3xl text-slate-300 font-medium">
-                    Technology Leader & AI Engineer
+                    Technology Leader & AI Enthusiast
                   </p>
                 </div>
                 
                 <p className="text-lg text-slate-400 max-w-lg leading-relaxed">
-                  Building Intelligent Applications with robust architectures, 
-                  turning AI theory into production systems that scale across enterprise environments.
+                  Passionate Technology Leader driving innovation through AI and intelligent systems. 
+                  With 17+ years of experience, I bridge traditional engineering with cutting-edge AI solutions 
+                  to transform business challenges into scalable opportunities.
                 </p>
               </div>
               
