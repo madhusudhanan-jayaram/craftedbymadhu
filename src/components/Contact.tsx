@@ -1,13 +1,10 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, Linkedin, Github, Send } from "lucide-react";
-
 export const Contact = () => {
-  return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 to-purple-50">
+  return <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 to-purple-50">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl lg:text-5xl font-bold text-center mb-16">
@@ -33,7 +30,7 @@ export const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-800">Email</p>
-                      <p className="text-gray-600">madhusudhanan.jeyaram@email.com</p>
+                      <p className="text-gray-600">madhusudhanan.jayaram@gmail.com</p>
                     </div>
                   </div>
                   
@@ -43,7 +40,7 @@ export const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-800">Phone</p>
-                      <p className="text-gray-600">+91 XXX XXX XXXX</p>
+                      <p className="text-gray-600">+1 -972-946-6451</p>
                     </div>
                   </div>
                   
@@ -52,10 +49,9 @@ export const Contact = () => {
                       <Linkedin className="text-white" size={20} />
                     </div>
                     <div>
-                      <p className="font-semibold text-gray-800">LinkedIn</p>
-                      <a href="#" className="text-blue-600 hover:text-blue-700 font-medium hover:underline">
-                        linkedin.com/in/madhusudhanan-jeyaram
-                      </a>
+                      <p className="font-semibold text-gray-800">LinkedIn
+https://www.linkedin.com/in/madhusudhanan-jeyaram</p>
+                      <a href="#" className="text-blue-600 hover:text-blue-700 font-medium hover:underline"></a>
                     </div>
                   </div>
                   
@@ -107,11 +103,7 @@ export const Contact = () => {
                 
                 <div>
                   <label className="text-sm font-semibold text-gray-700 block mb-2">Message</label>
-                  <Textarea 
-                    placeholder="Tell me about your project or how we can collaborate..." 
-                    rows={4} 
-                    className="border-2 focus:border-purple-400"
-                  />
+                  <Textarea placeholder="Tell me about your project or how we can collaborate..." rows={4} className="border-2 focus:border-purple-400" />
                 </div>
                 
                 <Button className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-semibold py-3 text-lg shadow-lg hover:shadow-xl transition-all duration-300">
@@ -123,6 +115,5 @@ export const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
