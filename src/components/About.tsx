@@ -57,7 +57,7 @@ export const About = () => {
                   <div className="text-slate-400">Team Members Led</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-orange-400 mb-2">15+</div>
+                  <div className="text-3xl font-bold text-orange-400 mb-2">0+</div>
                   <div className="text-slate-400">AI Solutions Deployed</div>
                 </div>
               </div>
