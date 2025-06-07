@@ -1,11 +1,8 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { GraduationCap, Target, Heart } from "lucide-react";
-
 export const About = () => {
-  return (
-    <section id="about" className="py-20 bg-gradient-to-br from-gray-50 to-purple-50">
+  return <section id="about" className="py-20 bg-gradient-to-br from-gray-50 to-purple-50">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl lg:text-5xl font-bold text-center mb-16">
@@ -74,16 +71,18 @@ export const About = () => {
                 </div>
                 <CardContent className="p-6 pt-8">
                   <h4 className="font-bold text-lg mb-2 text-orange-600">Philosophy</h4>
-                  <p className="text-gray-600">
-                    Turning AI theory into production systems with robust architectures, 
-                    always keeping human-centered design at the core.
-                  </p>
+                  <p className="text-gray-600">I believe that technology, when thoughtfully designed and ethically applied, has the power to profoundly improve lives and solve complex challenges. As an engineer and AI enthusiast, I am committed to bridging the gap between innovation and responsibility — building solutions that are not only efficient and scalable but also fair, transparent, and trustworthy.
+
+Continuous learning and curiosity drive my work. I see every problem as an opportunity to grow, collaborate, and push the boundaries of what technology can achieve. I embrace change and complexity with an open mind, striving to create systems that adapt gracefully and serve people’s real needs.
+
+Above all, I value integrity and empathy. Technology is ultimately a human endeavor, and it is our responsibility to ensure it benefits society as a whole, respecting diversity, privacy, and ethical principles.
+
+                </p>
                 </CardContent>
               </Card>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
