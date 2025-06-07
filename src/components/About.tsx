@@ -1,11 +1,8 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { GraduationCap, Target, Heart, MapPin, Calendar, Mail, Phone } from "lucide-react";
-
 export const About = () => {
-  return (
-    <section id="about" className="py-20 bg-slate-900">
+  return <section id="about" className="py-20 bg-slate-900">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -52,7 +49,7 @@ export const About = () => {
                   <div className="text-slate-400">Years Experience</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-orange-400 mb-2">50+</div>
+                  <div className="text-3xl font-bold text-orange-400 mb-2">4+</div>
                   <div className="text-slate-400">Projects Completed</div>
                 </div>
                 <div className="text-center">
@@ -66,54 +63,11 @@ export const About = () => {
               </div>
 
               <Card className="bg-slate-800 border-slate-700">
-                <CardContent className="p-6 space-y-4">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-orange-400/10 rounded-lg flex items-center justify-center">
-                      <Calendar className="text-orange-400" size={20} />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-slate-50">Date of Birth</p>
-                      <p className="text-slate-400">March 15, 1985</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-orange-400/10 rounded-lg flex items-center justify-center">
-                      <MapPin className="text-orange-400" size={20} />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-slate-50">Location</p>
-                      <p className="text-slate-400">Chennai, India</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-orange-400/10 rounded-lg flex items-center justify-center">
-                      <Mail className="text-orange-400" size={20} />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-slate-50">Email</p>
-                      <a href="mailto:madhusudhanan.jayaram@gmail.com" className="text-orange-400 hover:text-orange-300">
-                        madhusudhanan.jayaram@gmail.com
-                      </a>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-orange-400/10 rounded-lg flex items-center justify-center">
-                      <Phone className="text-orange-400" size={20} />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-slate-50">Phone</p>
-                      <p className="text-slate-400">+91-7305099315</p>
-                    </div>
-                  </div>
-                </CardContent>
+                
               </Card>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
