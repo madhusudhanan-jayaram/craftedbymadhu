@@ -9,16 +9,18 @@ export const Navigation = () => {
     { href: "#home", label: "Home" },
     { href: "#about", label: "About" },
     { href: "#services", label: "Services" },
+    { href: "#resume", label: "Resume" },
     { href: "#portfolio", label: "Portfolio" },
+    { href: "#testimonials", label: "Testimonials" },
     { href: "#contact", label: "Contact" },
   ];
 
   return (
-    <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+    <nav className="fixed top-0 w-full bg-slate-900/95 backdrop-blur-sm border-b border-slate-700 z-50">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <div className="text-xl font-bold text-purple-700">
-            Brand
+          <div className="text-xl font-bold text-orange-400">
+            Madhu
           </div>
           
           {/* Desktop Navigation */}
@@ -27,7 +29,7 @@ export const Navigation = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-gray-700 hover:text-purple-700 transition-colors duration-200 font-medium"
+                className="text-slate-300 hover:text-orange-400 transition-colors duration-200 font-medium"
               >
                 {item.label}
               </a>
@@ -36,14 +38,14 @@ export const Navigation = () => {
 
           {/* Download CV Button */}
           <div className="hidden md:block">
-            <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-medium transition-all duration-300 hover:scale-105">
+            <button className="bg-orange-400 hover:bg-orange-500 text-slate-900 px-6 py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105">
               Download CV
             </button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-purple-700"
+            className="md:hidden text-orange-400"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -52,18 +54,18 @@ export const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden pb-4 bg-white border-t">
+          <div className="md:hidden pb-4 bg-slate-900 border-t border-slate-700">
             {navItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="block py-3 text-gray-700 hover:text-purple-700 transition-colors duration-200 font-medium"
+                className="block py-3 text-slate-300 hover:text-orange-400 transition-colors duration-200 font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}
               </a>
             ))}
-            <button className="w-full mt-4 bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-medium transition-all duration-300">
+            <button className="w-full mt-4 bg-orange-400 hover:bg-orange-500 text-slate-900 px-6 py-2 rounded-lg font-medium transition-all duration-300">
               Download CV
             </button>
           </div>

@@ -1,28 +1,35 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { GraduationCap, Target, Heart } from "lucide-react";
+import { GraduationCap, Target, Heart, MapPin, Calendar, Mail, Phone } from "lucide-react";
+
 export const About = () => {
-  return <section id="about" className="py-20 bg-gradient-to-br from-gray-50 to-purple-50">
+  return (
+    <section id="about" className="py-20 bg-slate-900">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl lg:text-5xl font-bold text-center mb-16">
-            About <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600">Me</span>
-          </h2>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold text-slate-50 mb-4">
+              About <span className="text-orange-400">Me</span>
+            </h2>
+            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+              Passionate technology leader with 17+ years of experience in full-stack development and AI innovation.
+            </p>
+          </div>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
-              <Card className="relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-orange-100 to-yellow-100 rounded-full -translate-y-12 translate-x-12 opacity-60"></div>
-                <CardContent className="p-8 relative z-10">
-                  <h3 className="text-2xl font-bold mb-4 text-gray-800">
+              <Card className="bg-slate-800 border-slate-700">
+                <CardContent className="p-8">
+                  <h3 className="text-2xl font-bold mb-4 text-slate-50">
                     Designing Solutions, Not Just Visuals
                   </h3>
-                  <p className="text-gray-600 mb-6 leading-relaxed">
+                  <p className="text-slate-400 mb-6 leading-relaxed">
                     With over 17 years of experience at Tata Consultancy Services, 
                     I've evolved from a passionate developer to a Technology Leader 
                     bridging traditional full stack engineering with cutting-edge AI innovation.
                   </p>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-slate-400 leading-relaxed">
                     My journey began with an MCA from SASTRA University in 2011, 
                     and since then, I've been committed to turning complex technical 
                     challenges into elegant, scalable solutions.
@@ -31,58 +38,82 @@ export const About = () => {
               </Card>
               
               <div className="flex flex-wrap gap-3">
-                <Badge className="bg-purple-100 text-purple-700 hover:bg-purple-200 px-4 py-2">Problem Solving</Badge>
-                <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-200 px-4 py-2">Team Leadership</Badge>
-                <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-200 px-4 py-2">Fast Learning</Badge>
-                <Badge className="bg-green-100 text-green-700 hover:bg-green-200 px-4 py-2">Ethical AI</Badge>
+                <Badge className="bg-orange-400/10 text-orange-400 hover:bg-orange-400/20 px-4 py-2 border border-orange-400/20">Problem Solving</Badge>
+                <Badge className="bg-orange-400/10 text-orange-400 hover:bg-orange-400/20 px-4 py-2 border border-orange-400/20">Team Leadership</Badge>
+                <Badge className="bg-orange-400/10 text-orange-400 hover:bg-orange-400/20 px-4 py-2 border border-orange-400/20">Fast Learning</Badge>
+                <Badge className="bg-orange-400/10 text-orange-400 hover:bg-orange-400/20 px-4 py-2 border border-orange-400/20">Ethical AI</Badge>
               </div>
             </div>
             
             <div className="space-y-6">
-              <Card className="relative overflow-hidden">
-                <div className="absolute top-0 left-0 w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center -translate-y-8 -translate-x-8">
-                  <GraduationCap className="text-white" size={24} />
+              <div className="grid grid-cols-2 gap-6">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-orange-400 mb-2">17+</div>
+                  <div className="text-slate-400">Years Experience</div>
                 </div>
-                <CardContent className="p-6 pt-8">
-                  <h4 className="font-bold text-lg mb-2 text-blue-600">Education</h4>
-                  <p className="text-gray-600">
-                    Master of Computer Applications (MCA)<br />
-                    <span className="font-semibold">SASTRA University, 2011</span>
-                  </p>
-                </CardContent>
-              </Card>
-              
-              <Card className="relative overflow-hidden">
-                <div className="absolute top-0 left-0 w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center -translate-y-8 -translate-x-8">
-                  <Target className="text-white" size={24} />
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-orange-400 mb-2">50+</div>
+                  <div className="text-slate-400">Projects Completed</div>
                 </div>
-                <CardContent className="p-6 pt-8">
-                  <h4 className="font-bold text-lg mb-2 text-purple-600">Mission</h4>
-                  <p className="text-gray-600">
-                    Committed to ethical AI practices and continuous learning in 
-                    AI/ML, NLP, and responsible AI implementation in enterprise environments.
-                  </p>
-                </CardContent>
-              </Card>
-              
-              <Card className="relative overflow-hidden">
-                <div className="absolute top-0 left-0 w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center -translate-y-8 -translate-x-8">
-                  <Heart className="text-white" size={24} />
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-orange-400 mb-2">25+</div>
+                  <div className="text-slate-400">Team Members Led</div>
                 </div>
-                <CardContent className="p-6 pt-8">
-                  <h4 className="font-bold text-lg mb-2 text-orange-600">Philosophy</h4>
-                  <p className="text-gray-600">I believe that technology, when thoughtfully designed and ethically applied, has the power to profoundly improve lives and solve complex challenges. As an engineer and AI enthusiast, I am committed to bridging the gap between innovation and responsibility — building solutions that are not only efficient and scalable but also fair, transparent, and trustworthy.
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-orange-400 mb-2">10+</div>
+                  <div className="text-slate-400">Technologies Mastered</div>
+                </div>
+              </div>
 
-Continuous learning and curiosity drive my work. I see every problem as an opportunity to grow, collaborate, and push the boundaries of what technology can achieve. I embrace change and complexity with an open mind, striving to create systems that adapt gracefully and serve people’s real needs.
-
-Above all, I value integrity and empathy. Technology is ultimately a human endeavor, and it is our responsibility to ensure it benefits society as a whole, respecting diversity, privacy, and ethical principles.
-
-                </p>
+              <Card className="bg-slate-800 border-slate-700">
+                <CardContent className="p-6 space-y-4">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 bg-orange-400/10 rounded-lg flex items-center justify-center">
+                      <Calendar className="text-orange-400" size={20} />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-slate-50">Date of Birth</p>
+                      <p className="text-slate-400">March 15, 1985</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 bg-orange-400/10 rounded-lg flex items-center justify-center">
+                      <MapPin className="text-orange-400" size={20} />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-slate-50">Location</p>
+                      <p className="text-slate-400">Chennai, India</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 bg-orange-400/10 rounded-lg flex items-center justify-center">
+                      <Mail className="text-orange-400" size={20} />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-slate-50">Email</p>
+                      <a href="mailto:madhusudhanan.jayaram@gmail.com" className="text-orange-400 hover:text-orange-300">
+                        madhusudhanan.jayaram@gmail.com
+                      </a>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 bg-orange-400/10 rounded-lg flex items-center justify-center">
+                      <Phone className="text-orange-400" size={20} />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-slate-50">Phone</p>
+                      <p className="text-slate-400">+91-7305099315</p>
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
             </div>
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
