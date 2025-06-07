@@ -61,9 +61,7 @@ https://www.linkedin.com/in/madhusudhanan-jeyaram</p>
                     </div>
                     <div>
                       <p className="font-semibold text-gray-800">GitHub</p>
-                      <a href="#" className="text-blue-600 hover:text-blue-700 font-medium hover:underline">
-                        github.com/madhusudhanan-jeyaram
-                      </a>
+                      <a href="#" className="text-blue-600 hover:text-blue-700 font-medium hover:underline">https://github.com/madhusudhanan-jayaram/madhusudhanan-jayaram</a>
                     </div>
                   </div>
                 </CardContent>
