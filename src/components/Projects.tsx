@@ -1,12 +1,9 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
-
 export const Projects = () => {
-  return (
-    <section id="projects" className="py-20">
+  return <section id="projects" className="py-20">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">
@@ -81,9 +78,9 @@ export const Projects = () => {
                 <h4 className="font-semibold text-lg mb-3">Technologies Used</h4>
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="secondary">Java/J2EE</Badge>
-                  <Badge variant="secondary">Spring Boot</Badge>
-                  <Badge variant="secondary">Angular</Badge>
-                  <Badge variant="secondary">Service Workers</Badge>
+                  
+                  
+                  
                   <Badge variant="secondary">DevOps</Badge>
                   <Badge variant="secondary">Agile</Badge>
                   <Badge variant="secondary">Enterprise Architecture</Badge>
@@ -93,6 +90,5 @@ export const Projects = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
