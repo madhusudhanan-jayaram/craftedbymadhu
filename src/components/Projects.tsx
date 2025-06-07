@@ -1,12 +1,9 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
-
 export const Projects = () => {
-  return (
-    <section id="projects" className="py-20">
+  return <section id="projects" className="py-20">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">
@@ -20,7 +17,7 @@ export const Projects = () => {
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full -translate-y-16 translate-x-16 opacity-50"></div>
               
               <CardHeader>
-                <CardTitle className="text-2xl">Collections and Recovery System</CardTitle>
+                <CardTitle className="text-2xl">Decisioning and Lending</CardTitle>
                 <p className="text-lg text-blue-600 font-semibold">Citi Bank - Enterprise Modernization</p>
               </CardHeader>
               
@@ -91,7 +88,7 @@ export const Projects = () => {
               <div className="absolute top-0 left-0 w-32 h-32 bg-gradient-to-br from-green-100 to-emerald-100 rounded-full -translate-y-16 -translate-x-16 opacity-50"></div>
               
               <CardHeader>
-                <CardTitle className="text-2xl">AI-Powered Credit Decisioning Platform</CardTitle>
+                <CardTitle className="text-2xl">Collections and Recovery System</CardTitle>
                 <p className="text-lg text-emerald-600 font-semibold">Financial Services - Machine Learning Implementation</p>
               </CardHeader>
               
@@ -178,6 +175,5 @@ export const Projects = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
