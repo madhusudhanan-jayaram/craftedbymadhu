@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Briefcase, GraduationCap, Calendar } from "lucide-react";
@@ -25,14 +24,14 @@ export const Resume = () => {
       degree: "Master of Computer Applications (MCA)",
       institution: "SASTRA University",
       location: "Thanjavur, India",
-      period: "2009 - 2011",
+      period: "2007 - 2011",
       description: "Specialized in software engineering, database management, and advanced programming concepts."
     },
     {
-      degree: "Bachelor of Computer Applications (BCA)",
-      institution: "University College",
+      degree: "Bachelor of Computer Science (B.Sc)",
+      institution: "Madurai Kamaraj University",
       location: "India",
-      period: "2006 - 2009",
+      period: "2004 - 2006",
       description: "Foundation in computer science, programming languages, and software development principles."
     }
   ];
