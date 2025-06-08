@@ -132,19 +132,19 @@ export const Projects = () => {
                 </div>
                 
                 <div className="bg-slate-800 p-6 rounded-lg border border-slate-700">
-                  <h4 className="font-semibold text-lg mb-3 text-orange-400">Business Impact</h4>
+                  <h4 className="font-semibold text-lg mb-3 text-orange-400">Performance Metrics</h4>
                   <div className="grid md:grid-cols-3 gap-4">
                     <div className="text-center">
-                      <div className="text-3xl font-bold text-orange-400">85%</div>
-                      <div className="text-sm text-slate-400">Faster Decision Time</div>
+                      <div className="text-3xl font-bold text-orange-400">$14.9M+</div>
+                      <div className="text-sm text-slate-400">Total Cost Savings</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-3xl font-bold text-orange-400">30%</div>
-                      <div className="text-sm text-slate-400">Reduced Default Rate</div>
+                      <div className="text-3xl font-bold text-orange-400">30%+</div>
+                      <div className="text-sm text-slate-400">Reduction in Cyber Risks</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-3xl font-bold text-orange-400">$3.2M</div>
-                      <div className="text-sm text-slate-400">Annual Revenue Increase</div>
+                      <div className="text-3xl font-bold text-orange-400">40%</div>
+                      <div className="text-sm text-slate-400">Reduction in Deployment Time</div>
                     </div>
                   </div>
                 </div>
@@ -205,19 +205,19 @@ export const Projects = () => {
                 </div>
                 
                 <div className="bg-slate-800 p-6 rounded-lg border border-slate-700">
-                  <h4 className="font-semibold text-lg mb-3 text-orange-400">Business Impact</h4>
+                  <h4 className="font-semibold text-lg mb-3 text-orange-400">Performance Metrics</h4>
                   <div className="grid md:grid-cols-3 gap-4">
                     <div className="text-center">
-                      <div className="text-3xl font-bold text-orange-400">$14.9M</div>
-                      <div className="text-sm text-slate-400">Total Cost Savings</div>
+                      <div className="text-3xl font-bold text-orange-400">40%</div>
+                      <div className="text-sm text-slate-400">Application Response Time</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-3xl font-bold text-orange-400">30%+</div>
-                      <div className="text-sm text-slate-400">Reduction in Cyber Risks</div>
+                      <div className="text-3xl font-bold text-orange-400">$1.5M+</div>
+                      <div className="text-sm text-slate-400">Operational Cost Reduction</div>
                     </div>
                     <div className="text-center">
                       <div className="text-3xl font-bold text-orange-400">40%</div>
-                      <div className="text-sm text-slate-400">Reduction in Deployment Time</div>
+                      <div className="text-sm text-slate-400">Deployment Cycle Time</div>
                     </div>
                   </div>
                 </div>
@@ -229,10 +229,7 @@ export const Projects = () => {
                     <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">J2EE</Badge>
                     <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Oracle</Badge>
                     <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Choridant</Badge>
-                    
                     <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Tibco</Badge>
-                    
-                    
                   </div>
                 </div>
               </CardContent>
