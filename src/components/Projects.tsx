@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
+
 export const Projects = () => {
   return <section id="portfolio" className="py-20 bg-slate-800">
       <div className="container mx-auto px-4">
@@ -228,6 +229,81 @@ export const Projects = () => {
                     <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Oracle</Badge>
                     <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Choridant</Badge>
                     <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Tibco</Badge>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Automatic Railway Crossing System */}
+            <Card className="bg-slate-900 border-slate-700">
+              <CardHeader>
+                <CardTitle className="text-2xl text-slate-50">🚦 Automatic Railway Crossing System</CardTitle>
+                <p className="text-lg text-orange-400 font-semibold">Embedded Systems Developer - Safety Automation Project</p>
+              </CardHeader>
+              
+              <CardContent className="space-y-6">
+                <p className="text-slate-400 leading-relaxed">Designed and implemented an automatic railway crossing gate control system using Embedded C. The system uses IR sensors to detect approaching and departing trains and automatically opens/closes the railway gate without human intervention.</p>
+                
+                <div>
+                  <h4 className="font-semibold text-lg mb-4 text-slate-50">Key Features</h4>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="space-y-3">
+                      <div className="flex items-start">
+                        <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span className="text-slate-400">IR sensors detect train presence on both sides of the track</span>
+                      </div>
+                      <div className="flex items-start">
+                        <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span className="text-slate-400">Gate motor controlled via microcontroller based on sensor signals</span>
+                      </div>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="flex items-start">
+                        <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span className="text-slate-400">Real-time automation enhances safety and reduces manual errors</span>
+                      </div>
+                      <div className="flex items-start">
+                        <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span className="text-slate-400">Ensures timely operation of gates during train arrival and departure</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                  <h4 className="font-semibold text-lg mb-3 text-orange-400">Project Benefits</h4>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <div className="flex items-start">
+                        <span className="text-green-400 mr-2">✅</span>
+                        <span className="text-slate-400 text-sm">Prevents accidents by automatically closing the gate when a train is detected</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-green-400 mr-2">✅</span>
+                        <span className="text-slate-400 text-sm">Minimizes human error in manual operations</span>
+                      </div>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="flex items-start">
+                        <span className="text-green-400 mr-2">✅</span>
+                        <span className="text-slate-400 text-sm">Cost-effective and scalable for rural/urban railway crossings</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-green-400 mr-2">✅</span>
+                        <span className="text-slate-400 text-sm">Demonstrates real-time embedded systems and sensor integration</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 className="font-semibold text-lg mb-3 text-slate-50">Technologies Used</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Embedded C</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">IR Sensors</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Microcontroller</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">8051/AVR/Arduino</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Motor Driver</Badge>
                   </div>
                 </div>
               </CardContent>
