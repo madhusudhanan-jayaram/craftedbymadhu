@@ -1,5 +1,6 @@
+
 import { Card, CardContent } from "@/components/ui/card";
-import { TrendingUp, Users, Award, Brain } from "lucide-react";
+import { TrendingUp, CheckCheck, Award, Brain } from "lucide-react";
 
 export const Statistics = () => {
   const stats = [{
@@ -8,7 +9,7 @@ export const Statistics = () => {
     label: "Years Experience",
     description: "Professional development"
   }, {
-    icon: Users,
+    icon: CheckCheck,
     value: "4",
     label: "Projects Completed",
     description: "Successful deliveries"
