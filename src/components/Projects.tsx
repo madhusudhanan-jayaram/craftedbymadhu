@@ -87,12 +87,12 @@ export const Projects = () => {
             {/* Credit Decisioning Platform */}
             <Card className="bg-slate-900 border-slate-700">
               <CardHeader>
-                <CardTitle className="text-2xl text-slate-50">Collections and Recovery System</CardTitle>
-                <p className="text-lg text-orange-400 font-semibold">Financial Services - Machine Learning Implementation</p>
+                <CardTitle className="text-2xl text-slate-50">Decisioning & Lending - Retail and Small Banking</CardTitle>
+                <p className="text-lg text-orange-400 font-semibold">Technical Lead - Banking Systems Modernization & Security Compliance</p>
               </CardHeader>
               
               <CardContent className="space-y-6">
-                <p className="text-slate-400 leading-relaxed">Architected and developed an intelligent credit decisioning system that leverages machine learning algorithms to automate loan approvals and risk assessment. The platform processes thousands of applications daily while maintaining regulatory compliance and reducing decision time from days to minutes.</p>
+                <p className="text-slate-400 leading-relaxed">Led full-stack, cross-functional teams to deliver banking system solutions by migrating legacy applications to microservices, driving modernization initiatives while enhancing cybersecurity, ensuring compliance, and strengthening application governance for decisioning, lending, and credit line increase platforms.</p>
                 
                 <div>
                   <h4 className="font-semibold text-lg mb-4 text-slate-50">Key Features</h4>
@@ -100,39 +100,30 @@ export const Projects = () => {
                     <div className="space-y-3">
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-slate-400">Real-time credit scoring using ML algorithms</span>
+                        <span className="text-slate-400">Led full-stack teams to migrate legacy banking apps to scalable Tibco / microservices</span>
                       </div>
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-slate-400">
-                          Automated fraud detection and prevention
-                        </span>
+                        <span className="text-slate-400">Enhanced cybersecurity posture through proactive vulnerability remediation</span>
                       </div>
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-slate-400">
-                          Regulatory compliance monitoring
-                        </span>
+                        <span className="text-slate-400">Ensured strict regulatory compliance including PCI-DSS, KYC, and AML standards</span>
                       </div>
                     </div>
                     <div className="space-y-3">
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-slate-400">
-                          Risk-based pricing optimization
-                        </span>
+                        <span className="text-slate-400">Implemented application governance to mitigate operational and security risks</span>
                       </div>
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-slate-400">
-                          Dynamic lending criteria adjustment
-                        </span>
+                        <span className="text-slate-400">Drove adoption of microservice patterns (circuit breaker, API gateway) for resilience</span>
                       </div>
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-slate-400">
-                          Comprehensive audit trail system
-                        </span>
+                        <span className="text-slate-400">Fostered cross-functional collaboration across engineering, security, and architecture teams
+                      </span>
                       </div>
                     </div>
                   </div>
@@ -159,13 +150,13 @@ export const Projects = () => {
                 <div>
                   <h4 className="font-semibold text-lg mb-3 text-slate-50">Technologies Used</h4>
                   <div className="flex flex-wrap gap-2">
-                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Python</Badge>
-                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">TensorFlow</Badge>
-                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Apache Kafka</Badge>
-                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">PostgreSQL</Badge>
-                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Docker</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">HTML</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">CSS</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Javascript</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Microservice</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Angular</Badge>
                     <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Kubernetes</Badge>
-                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">AWS</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Oracle</Badge>
                     <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">REST API</Badge>
                   </div>
                 </div>
@@ -175,7 +166,7 @@ export const Projects = () => {
             {/* Digital Banking Platform */}
             <Card className="bg-slate-900 border-slate-700">
               <CardHeader>
-                <CardTitle className="text-2xl text-slate-50">Collections & Recovery</CardTitle>
+                <CardTitle className="text-2xl text-slate-50">Collections & Recovery - Retail Banking</CardTitle>
                 <p className="text-lg text-orange-400 font-semibold">Java Full Stack Developer – Collections, Recovery & Payments Modernization
               </p>
               </CardHeader>
@@ -212,7 +203,7 @@ export const Projects = () => {
                 </div>
                 
                 <div className="bg-slate-800 p-6 rounded-lg border border-slate-700">
-                  <h4 className="font-semibold text-lg mb-3 text-orange-400">Performance Metrics</h4>
+                  <h4 className="font-semibold text-lg mb-3 text-orange-400">Business I</h4>
                   <div className="grid md:grid-cols-3 gap-4">
                     <div className="text-center">
                       <div className="text-3xl font-bold text-orange-400">40%</div>
