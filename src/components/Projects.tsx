@@ -62,12 +62,12 @@ export const Projects = () => {
                   <h4 className="font-semibold text-lg mb-3 text-orange-400">Impact & Results</h4>
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="text-center">
-                      <div className="text-3xl font-bold text-orange-400">$1.5M</div>
-                      <div className="text-sm text-slate-400">Annual Cost Savings</div>
+                      <div className="text-3xl font-bold text-orange-400">$500K</div>
+                      <div className="text-sm text-slate-400">Annual Development Cost Savings</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-3xl font-bold text-orange-400">99%</div>
-                      <div className="text-sm text-slate-400">System Uptime</div>
+                      <div className="text-3xl font-bold text-orange-400">$200K</div>
+                      <div className="text-sm text-slate-400">Time-to-Market & Resource Cost Savings</div>
                     </div>
                   </div>
                 </div>
