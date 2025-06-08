@@ -11,10 +11,16 @@ export const Resume = () => {
       period: "2007 - Present",
       description: "Leading cross-functional teams in full stack development and AI innovation initiatives. Architecting scalable web applications with modern technologies and AI integration.",
       achievements: [
-        "Led modernization of critical banking applications for Citi Bank",
-        "Implemented AI-driven solutions resulting in 30% efficiency improvement",
-        "Managed teams of 15+ developers across multiple projects",
-        "Drove adoption of agile methodologies and DevOps practices"
+        "Modernized 60%+ of Legacy Systems into cloud-native microservices, reducing operational overhead by 35% and accelerating time-to-market by 50%.",
+        "Enhanced Code Quality & Coverage by establishing engineering best practices, achieving a 40% improvement in code quality and 85%+ unit test coverage.",
+        "Boosted Customer Satisfaction by 20% by integrating analytics and UX testing into the SDLC, aligning development with user feedback.",
+        "Accelerated Frontend Delivery by 60% through the adoption of micro front-end architecture, enabling independent deployments.",
+        "Cut Security Response Time by 70% by driving enterprise-wide DevSecOps adoption, embedding automated security scanning into CI/CD pipelines.",
+        "Led Cross-Functional Teams (25+ Members) across dev, QA, architecture, and product to deliver initiatives aligned with business KPIs and regulatory mandates.",
+        "Achieved Zero Audit Findings by integrating PCI-DSS, KYC, and AML compliance checks into code reviews and release workflows.",
+        "Improved System Availability to 99.99% by migrating mission-critical systems to OpenShift and adopting containerized infrastructure with auto-scaling.",
+        "Secured Multi-Million Dollar Funding by collaborating with CIOs/CISOs to define modernization strategies and business-aligned tech roadmaps.",
+        "Reduced Redundant Development by 30% via inner-source enablement, promoting reusable code across multiple teams and departments."
       ]
     }
   ];
