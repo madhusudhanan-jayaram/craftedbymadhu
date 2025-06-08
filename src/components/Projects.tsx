@@ -175,52 +175,37 @@ export const Projects = () => {
             {/* Digital Banking Platform */}
             <Card className="bg-slate-900 border-slate-700">
               <CardHeader>
-                <CardTitle className="text-2xl text-slate-50">Digital Banking Platform</CardTitle>
-                <p className="text-lg text-orange-400 font-semibold">Multi-Tenant SaaS - Cloud-Native Architecture</p>
+                <CardTitle className="text-2xl text-slate-50">Collections & Recovery</CardTitle>
+                <p className="text-lg text-orange-400 font-semibold">Java Full Stack Developer – Collections, Recovery & Payments Modernization
+              </p>
               </CardHeader>
               
               <CardContent className="space-y-6">
-                <p className="text-slate-400 leading-relaxed">Designed and implemented a comprehensive digital banking platform serving multiple financial institutions. Built with microservices architecture on cloud infrastructure, the platform provides white-label banking solutions with real-time transaction processing, advanced analytics, and seamless third-party integrations.</p>
+                <p className="text-slate-400 leading-relaxed">Contributed to the modernization of enterprise banking applications in Collections, Recovery, and Payments by migrating legacy systems to scalable Java/J2EE architectures. Led end-to-end development, integration, and CI/CD improvements, ensuring performance, compliance, and reliability in a highly regulated environment.</p>
                 
                 <div>
-                  <h4 className="font-semibold text-lg mb-4 text-slate-50">Platform Capabilities</h4>
+                  <h4 className="font-semibold text-lg mb-4 text-slate-50">Key Features</h4>
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="space-y-3">
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-slate-400">Multi-tenant architecture with customizable branding</span>
+                        <span className="text-slate-400">Legacy Modernization: Migrated mission-critical applications from Visual Basic to Java/J2EE, enhancing performance, security, and maintainability.</span>
                       </div>
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-slate-400">
-                          Real-time transaction processing and settlement
-                        </span>
+                        <span className="text-slate-400">Scalable Architecture: Applied MVC architecture and best practices in Java Full Stack to build scalable, modular, and resilient applications.</span>
                       </div>
-                      <div className="flex items-start">
-                        <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-slate-400">
-                          Advanced fraud detection and monitoring
-                        </span>
-                      </div>
+                      
                     </div>
                     <div className="space-y-3">
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-slate-400">
-                          Open Banking API integrations
-                        </span>
+                        <span className="text-slate-400">🔗 System Integration: Integrated mainframe systems with TIBCO ESB and modern web applications to ensure seamless data exchange and process consistency</span>
                       </div>
+                      
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-slate-400">
-                          Mobile-first responsive design
-                        </span>
-                      </div>
-                      <div className="flex items-start">
-                        <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-slate-400">
-                          Comprehensive analytics dashboard
-                        </span>
+                        <span className="text-slate-400">📉 Cost Optimization: Reduced operational costs by modernizing legacy workflows and automating key processes within recovery and payments</span>
                       </div>
                     </div>
                   </div>
@@ -231,15 +216,15 @@ export const Projects = () => {
                   <div className="grid md:grid-cols-3 gap-4">
                     <div className="text-center">
                       <div className="text-3xl font-bold text-orange-400">50+</div>
-                      <div className="text-sm text-slate-400">Partner Banks</div>
+                      <div className="text-sm text-slate-400">                   Application Response Time</div>
                     </div>
                     <div className="text-center">
                       <div className="text-3xl font-bold text-orange-400">2M+</div>
-                      <div className="text-sm text-slate-400">Active Users</div>
+                      <div className="text-sm text-slate-400">                  Operational Cost Reduction</div>
                     </div>
                     <div className="text-center">
                       <div className="text-3xl font-bold text-orange-400">99.9%</div>
-                      <div className="text-sm text-slate-400">API Uptime</div>
+                      <div className="text-sm text-slate-400">                     Deployment Cycle Time</div>
                     </div>
                   </div>
                 </div>
