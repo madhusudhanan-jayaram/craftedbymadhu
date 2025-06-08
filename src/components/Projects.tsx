@@ -1,7 +1,9 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
+
 export const Projects = () => {
   return <section id="portfolio" className="py-20 bg-slate-800">
       <div className="container mx-auto px-4">
@@ -88,7 +90,7 @@ export const Projects = () => {
             <Card className="bg-slate-900 border-slate-700">
               <CardHeader>
                 <CardTitle className="text-2xl text-slate-50">Decisioning & Lending - Retail and Small Banking</CardTitle>
-                <p className="text-lg text-orange-400 font-semibold">Technical Lead - Banking Systems Modernization & Security Compliance</p>
+                <p className="text-lg text-orange-400 font-semibold">Technical Lead - Banking Systems Modernization & Security Compliance</p>
               </CardHeader>
               
               <CardContent className="space-y-6">
@@ -203,19 +205,19 @@ export const Projects = () => {
                 </div>
                 
                 <div className="bg-slate-800 p-6 rounded-lg border border-slate-700">
-                  <h4 className="font-semibold text-lg mb-3 text-orange-400">Business I</h4>
+                  <h4 className="font-semibold text-lg mb-3 text-orange-400">Business Impact</h4>
                   <div className="grid md:grid-cols-3 gap-4">
                     <div className="text-center">
-                      <div className="text-3xl font-bold text-orange-400">40%</div>
-                      <div className="text-sm text-slate-400">Application Response Time</div>
+                      <div className="text-3xl font-bold text-orange-400">$14.9M</div>
+                      <div className="text-sm text-slate-400">Total Cost Savings</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-3xl font-bold text-orange-400">$1.5M+</div>
-                      <div className="text-sm text-slate-400">Operational Cost Reduction</div>
+                      <div className="text-3xl font-bold text-orange-400">30%+</div>
+                      <div className="text-sm text-slate-400">Reduction in Cyber Risks</div>
                     </div>
                     <div className="text-center">
                       <div className="text-3xl font-bold text-orange-400">40%</div>
-                      <div className="text-sm text-slate-400">Deployment Cycle Time</div>
+                      <div className="text-sm text-slate-400">Reduction in Deployment Time</div>
                     </div>
                   </div>
                 </div>
