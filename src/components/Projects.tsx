@@ -1,9 +1,7 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
-
 export const Projects = () => {
   return <section id="portfolio" className="py-20 bg-slate-800">
       <div className="container mx-auto px-4">
@@ -21,7 +19,7 @@ export const Projects = () => {
             {/* Collections and Recovery System */}
             <Card className="bg-slate-900 border-slate-700">
               <CardHeader>
-                <CardTitle className="text-2xl text-slate-50">Decisioning and Lending</CardTitle>
+                <CardTitle className="text-2xl text-slate-50">Customer Service - Retail Banking</CardTitle>
                 <p className="text-lg text-orange-400 font-semibold">Citi Bank - Enterprise Modernization</p>
               </CardHeader>
               
