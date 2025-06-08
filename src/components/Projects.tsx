@@ -215,16 +215,16 @@ export const Projects = () => {
                   <h4 className="font-semibold text-lg mb-3 text-orange-400">Performance Metrics</h4>
                   <div className="grid md:grid-cols-3 gap-4">
                     <div className="text-center">
-                      <div className="text-3xl font-bold text-orange-400">50+</div>
-                      <div className="text-sm text-slate-400">                   Application Response Time</div>
+                      <div className="text-3xl font-bold text-orange-400">40%</div>
+                      <div className="text-sm text-slate-400">Application Response Time</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-3xl font-bold text-orange-400">2M+</div>
-                      <div className="text-sm text-slate-400">                  Operational Cost Reduction</div>
+                      <div className="text-3xl font-bold text-orange-400">$1.5M+</div>
+                      <div className="text-sm text-slate-400">Operational Cost Reduction</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-3xl font-bold text-orange-400">99.9%</div>
-                      <div className="text-sm text-slate-400">                     Deployment Cycle Time</div>
+                      <div className="text-3xl font-bold text-orange-400">40%</div>
+                      <div className="text-sm text-slate-400">Deployment Cycle Time</div>
                     </div>
                   </div>
                 </div>
