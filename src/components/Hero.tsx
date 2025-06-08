@@ -69,12 +69,6 @@ export const Hero = () => {
                   </span>
                 </Button>
               </div>
-
-              {/* Experience badge */}
-              <div className="inline-flex items-center gap-3 bg-slate-800 rounded-lg px-6 py-3 border border-slate-700">
-                <div className="text-2xl font-bold text-orange-400">17+</div>
-                <div className="text-slate-300 font-medium">Years Experience</div>
-              </div>
             </div>
 
             {/* Right side - Profile image */}
