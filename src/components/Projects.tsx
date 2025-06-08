@@ -20,7 +20,7 @@ export const Projects = () => {
             <Card className="bg-slate-900 border-slate-700">
               <CardHeader>
                 <CardTitle className="text-2xl text-slate-50">Customer Service - Retail Banking</CardTitle>
-                <p className="text-lg text-orange-400 font-semibold">Citi Bank - Enterprise Modernization</p>
+                <p className="text-lg text-orange-400 font-semibold">Technical Lead - Enterprise Modernization</p>
               </CardHeader>
               
               <CardContent className="space-y-6">
