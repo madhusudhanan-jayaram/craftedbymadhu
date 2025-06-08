@@ -200,7 +200,7 @@ export const Projects = () => {
                     <div className="space-y-3">
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-slate-400">🔗 System Integration: Integrated mainframe systems with TIBCO ESB and modern web applications to ensure seamless data exchange and process consistency</span>
+                        <span className="text-slate-400">System Integration: Integrated mainframe systems with TIBCO ESB and modern web applications to ensure seamless data exchange and process consistency</span>
                       </div>
                       
                       <div className="flex items-start">
