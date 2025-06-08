@@ -205,7 +205,7 @@ export const Projects = () => {
                       
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-slate-400">📉 Cost Optimization: Reduced operational costs by modernizing legacy workflows and automating key processes within recovery and payments</span>
+                        <span className="text-slate-400">Cost Optimization: Reduced operational costs by modernizing legacy workflows and automating key processes within recovery and payments</span>
                       </div>
                     </div>
                   </div>
