@@ -5,7 +5,7 @@ import { Briefcase, GraduationCap, Calendar } from "lucide-react";
 export const Resume = () => {
   const experience = [
     {
-      title: "Technology",
+      title: "Technology Leader",
       company: "Tata Consultancy Services",
       location: "USA",
       period: "Oct 2024 - Present",
