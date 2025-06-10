@@ -5,6 +5,14 @@ import { Briefcase, GraduationCap, Calendar } from "lucide-react";
 export const Resume = () => {
   const experience = [
     {
+      title: "Application Development Manager",
+      company: "Tata Consultancy Services",
+      location: "USA, India",
+      period: "April 2022 - Oct 2024",
+      description: "Managed EOVS (End of Vendor Support) initiatives and directed cybersecurity fixes by upgrading outdated components and addressing vulnerabilities to ensure compliance, security, and business continuity.",
+      achievements: []
+    },
+    {
       title: "Senior Full Stack Developer",
       company: "Tata Consultancy Services",
       location: "USA",
