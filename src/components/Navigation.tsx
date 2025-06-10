@@ -1,5 +1,3 @@
-
-
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -12,9 +10,6 @@ export const Navigation = () => {
   }, {
     href: "#about",
     label: "About"
-  }, {
-    href: "#resume",
-    label: "Resume"
   }, {
     href: "#portfolio",
     label: "Portfolio"
@@ -56,4 +51,3 @@ export const Navigation = () => {
     </nav>
   );
 };
-
