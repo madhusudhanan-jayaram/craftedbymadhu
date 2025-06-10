@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Upload, User, Download } from "lucide-react";
 import { useState, useRef } from "react";
@@ -23,13 +22,63 @@ export const Hero = () => {
   };
 
   const handleDownloadCV = () => {
+    // Create a simple text-based resume content
+    const resumeContent = `
+MADHUSUDHANAN JEYARAM
+Technology Leader & AI Enthusiast
+
+CONTACT INFORMATION
+Email: madhusudhanan.jeyaram@email.com
+Phone: +1-XXX-XXX-XXXX
+Location: USA
+
+PROFESSIONAL SUMMARY
+Passionate Technology Leader driving innovation through AI and intelligent systems. 
+With 17+ years of experience, I bridge traditional engineering with cutting-edge AI solutions 
+to transform business challenges into scalable opportunities.
+
+EXPERIENCE
+
+Technology Leader | Tata Consultancy Services | USA | Oct 2024 - Present
+Championed full stack development best practices using Java, Spring Boot, Angular, and RESTful APIs for the Customer Center application, fostering a culture of continuous improvement and innovation.
+
+Application Development Manager | Tata Consultancy Services | USA, India | April 2022 - Oct 2024
+Managed EOVS (End of Vendor Support) initiatives and directed cybersecurity fixes by upgrading outdated components and addressing vulnerabilities to ensure compliance, security, and business continuity.
+
+Senior Full Stack Developer | Tata Consultancy Services | USA | May 2015 - May 2020
+Developed and optimized decision logic for Credit Card and Personal Loan acquisitions to assess customer eligibility, reduce risk, and improve approval efficiency.
+
+Mid-Level Full Stack Developer | Tata Consultancy Services | India | Dec 2008 - May 2015
+Sunset legacy Collections and Payments applications by migrating VB screens to modern Java Full Stack solutions, improving system performance and maintainability.
+
+Junior Full Stack Developer | Tata Consultancy Services | India | Jan 2007 - Nov 2008
+Optimized collections and payments systems as a Junior Full Stack Developer to enhance customer engagement and drive delinquent debt recovery.
+
+EDUCATION
+
+Master of Computer Applications (MCA) | SASTRA University | Thanjavur, India | 2007 - 2011
+Specialized in software engineering, database management, and advanced programming concepts.
+
+Bachelor of Computer Science (B.Sc) | Madurai Kamaraj University | India | 2004 - 2006
+Foundation in computer science, programming languages, and software development principles.
+    `;
+
+    // Create a blob with the resume content
+    const blob = new Blob([resumeContent], { type: 'text/plain' });
+    const url = window.URL.createObjectURL(blob);
+    
     // Create a temporary link element to trigger download
     const link = document.createElement('a');
-    link.href = '/cv.pdf'; // This would be the path to your CV file
-    link.download = 'Madhusudhanan_Jeyaram_CV.pdf';
+    link.href = url;
+    link.download = 'Madhusudhanan_Jeyaram_Resume.txt';
     document.body.appendChild(link);
     link.click();
+    
+    // Clean up
     document.body.removeChild(link);
+    window.URL.revokeObjectURL(url);
+    
+    console.log('Resume download initiated');
   };
 
   return (
