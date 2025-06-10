@@ -1,7 +1,7 @@
+
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Upload, User, Download } from "lucide-react";
+import { ArrowDown, Upload, User } from "lucide-react";
 import { useState, useRef } from "react";
-import jsPDF from 'jspdf';
 
 export const Hero = () => {
   const [profileImage, setProfileImage] = useState<string | null>("https://i.postimg.cc/30pRNvt4/profile.jpg");
@@ -20,126 +20,6 @@ export const Hero = () => {
 
   const triggerFileInput = () => {
     fileInputRef.current?.click();
-  };
-
-  const handleDownloadCV = () => {
-    const pdf = new jsPDF();
-    
-    // Set up fonts and colors
-    pdf.setFont('helvetica', 'bold');
-    pdf.setFontSize(20);
-    pdf.text('MADHUSUDHANAN JEYARAM', 20, 20);
-    
-    pdf.setFontSize(14);
-    pdf.setFont('helvetica', 'normal');
-    pdf.text('Technology Leader & AI Enthusiast', 20, 30);
-    
-    // Contact Information
-    pdf.setFont('helvetica', 'bold');
-    pdf.setFontSize(12);
-    pdf.text('CONTACT INFORMATION', 20, 45);
-    
-    pdf.setFont('helvetica', 'normal');
-    pdf.setFontSize(10);
-    pdf.text('Email: madhusudhanan.jeyaram@email.com', 20, 55);
-    pdf.text('Phone: +1-XXX-XXX-XXXX', 20, 62);
-    pdf.text('Location: USA', 20, 69);
-    
-    // Professional Summary
-    pdf.setFont('helvetica', 'bold');
-    pdf.setFontSize(12);
-    pdf.text('PROFESSIONAL SUMMARY', 20, 84);
-    
-    pdf.setFont('helvetica', 'normal');
-    pdf.setFontSize(10);
-    const summaryText = 'Passionate Technology Leader driving innovation through AI and intelligent systems. With 17+ years of experience, I bridge traditional engineering with cutting-edge AI solutions to transform business challenges into scalable opportunities.';
-    const splitSummary = pdf.splitTextToSize(summaryText, 170);
-    pdf.text(splitSummary, 20, 94);
-    
-    // Experience Section
-    pdf.setFont('helvetica', 'bold');
-    pdf.setFontSize(12);
-    pdf.text('EXPERIENCE', 20, 115);
-    
-    let yPosition = 125;
-    
-    // Experience entries
-    const experiences = [
-      {
-        title: 'Technology Leader',
-        company: 'Tata Consultancy Services',
-        location: 'USA',
-        period: 'Oct 2024 - Present',
-        description: 'Championed full stack development best practices using Java, Spring Boot, Angular, and RESTful APIs for the Customer Center application, fostering a culture of continuous improvement and innovation.'
-      },
-      {
-        title: 'Application Development Manager',
-        company: 'Tata Consultancy Services',
-        location: 'USA, India',
-        period: 'April 2022 - Oct 2024',
-        description: 'Managed EOVS (End of Vendor Support) initiatives and directed cybersecurity fixes by upgrading outdated components and addressing vulnerabilities to ensure compliance, security, and business continuity.'
-      },
-      {
-        title: 'Senior Full Stack Developer',
-        company: 'Tata Consultancy Services',
-        location: 'USA',
-        period: 'May 2015 - May 2020',
-        description: 'Developed and optimized decision logic for Credit Card and Personal Loan acquisitions to assess customer eligibility, reduce risk, and improve approval efficiency.'
-      }
-    ];
-    
-    experiences.forEach((exp) => {
-      pdf.setFont('helvetica', 'bold');
-      pdf.setFontSize(10);
-      pdf.text(`${exp.title} | ${exp.company} | ${exp.location} | ${exp.period}`, 20, yPosition);
-      
-      pdf.setFont('helvetica', 'normal');
-      pdf.setFontSize(9);
-      const descriptionLines = pdf.splitTextToSize(exp.description, 170);
-      pdf.text(descriptionLines, 20, yPosition + 7);
-      
-      yPosition += 25;
-      
-      // Add new page if needed
-      if (yPosition > 250) {
-        pdf.addPage();
-        yPosition = 20;
-      }
-    });
-    
-    // Education Section
-    if (yPosition > 220) {
-      pdf.addPage();
-      yPosition = 20;
-    }
-    
-    pdf.setFont('helvetica', 'bold');
-    pdf.setFontSize(12);
-    pdf.text('EDUCATION', 20, yPosition);
-    yPosition += 10;
-    
-    pdf.setFont('helvetica', 'bold');
-    pdf.setFontSize(10);
-    pdf.text('Master of Computer Applications (MCA) | SASTRA University | Thanjavur, India | 2007 - 2011', 20, yPosition);
-    
-    pdf.setFont('helvetica', 'normal');
-    pdf.setFontSize(9);
-    pdf.text('Specialized in software engineering, database management, and advanced programming concepts.', 20, yPosition + 7);
-    
-    yPosition += 20;
-    
-    pdf.setFont('helvetica', 'bold');
-    pdf.setFontSize(10);
-    pdf.text('Bachelor of Computer Science (B.Sc) | Madurai Kamaraj University | India | 2004 - 2006', 20, yPosition);
-    
-    pdf.setFont('helvetica', 'normal');
-    pdf.setFontSize(9);
-    pdf.text('Foundation in computer science, programming languages, and software development principles.', 20, yPosition + 7);
-    
-    // Save the PDF
-    pdf.save('Madhusudhanan_Jeyaram_Resume.pdf');
-    
-    console.log('PDF Resume download initiated');
   };
 
   return (
@@ -177,17 +57,6 @@ export const Hero = () => {
                   <a href="#contact" className="flex items-center gap-2">
                     Hire Me
                   </a>
-                </Button>
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  className="border-2 border-orange-400 text-orange-400 hover:bg-orange-400 hover:text-slate-900 px-8 py-6 rounded-lg text-lg transition-all duration-300 hover:scale-105"
-                  onClick={handleDownloadCV}
-                >
-                  <Download size={20} />
-                  <span className="flex items-center gap-2">
-                    Download CV
-                  </span>
                 </Button>
               </div>
             </div>
