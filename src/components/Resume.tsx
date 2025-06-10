@@ -5,6 +5,14 @@ import { Briefcase, GraduationCap, Calendar } from "lucide-react";
 export const Resume = () => {
   const experience = [
     {
+      title: "Senior Full Stack Developer",
+      company: "Tata Consultancy Services",
+      location: "USA",
+      period: "May 2015 - May 2020",
+      description: "Developed and optimized decision logic for Credit Card and Personal Loan acquisitions to assess customer eligibility, reduce risk, and improve approval efficiency.",
+      achievements: []
+    },
+    {
       title: "Mid-Level Full Stack Developer",
       company: "Tata Consultancy Services",
       location: "India",
