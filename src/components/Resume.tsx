@@ -11,17 +11,33 @@ export const Resume = () => {
       period: "2007 - Present",
       description: "Leading cross-functional teams in full stack development and AI innovation initiatives. Architecting scalable web applications with modern technologies and AI integration.",
       achievements: [
-        "Modernized 60%+ of Legacy Systems into cloud-native microservices, reducing operational overhead by 35% and accelerating time-to-market by 50%.",
-        "Enhanced Code Quality & Coverage by establishing engineering best practices, achieving a 40% improvement in code quality and 85%+ unit test coverage.",
-        "Boosted Customer Satisfaction by 20% by integrating analytics and UX testing into the SDLC, aligning development with user feedback.",
-        "Accelerated Frontend Delivery by 60% through the adoption of micro front-end architecture, enabling independent deployments.",
-        "Cut Security Response Time by 70% by driving enterprise-wide DevSecOps adoption, embedding automated security scanning into CI/CD pipelines.",
+        "Modernized 60+ of Legacy Systems into cloud-native microservices, reducing operational overhead by 35 and accelerating time-to-market by 50.",
+        "Enhanced Code Quality & Coverage by establishing engineering best practices, achieving a 40 improvement in code quality and 85+ unit test coverage.",
+        "Boosted Customer Satisfaction by 20 by integrating analytics and UX testing into the SDLC, aligning development with user feedback.",
+        "Accelerated Frontend Delivery by 60 through the adoption of micro front-end architecture, enabling independent deployments.",
+        "Cut Security Response Time by 70 by driving enterprise-wide DevSecOps adoption, embedding automated security scanning into CI/CD pipelines.",
         "Led Cross-Functional Teams (25+ Members) across dev, QA, architecture, and product to deliver initiatives aligned with business KPIs and regulatory mandates.",
         "Achieved Zero Audit Findings by integrating PCI-DSS, KYC, and AML compliance checks into code reviews and release workflows.",
-        "Improved System Availability to 99.99% by migrating mission-critical systems to OpenShift and adopting containerized infrastructure with auto-scaling.",
+        "Improved System Availability to 99.99 by migrating mission-critical systems to OpenShift and adopting containerized infrastructure with auto-scaling.",
         "Secured Multi-Million Dollar Funding by collaborating with CIOs/CISOs to define modernization strategies and business-aligned tech roadmaps.",
-        "Reduced Redundant Development by 30% via inner-source enablement, promoting reusable code across multiple teams and departments."
+        "Reduced Redundant Development by 30 via inner-source enablement, promoting reusable code across multiple teams and departments."
       ]
+    },
+    {
+      title: "Mid-Level Full Stack Developer",
+      company: "Tata Consultancy Services",
+      location: "India",
+      period: "Dec 2008 - May 2015",
+      description: "Sunset legacy Collections and Payments applications by migrating VB screens to modern Java Full Stack solutions, improving system performance and maintainability.",
+      achievements: []
+    },
+    {
+      title: "Junior Full Stack Developer",
+      company: "Tata Consultancy Services",
+      location: "India",
+      period: "Jan 2007 - Nov 2008",
+      description: "Optimized collections and payments systems as a Junior Full Stack Developer to enhance customer engagement and drive delinquent debt recovery.",
+      achievements: []
     }
   ];
 
@@ -84,17 +100,19 @@ export const Resume = () => {
                     </CardHeader>
                     <CardContent className="space-y-4">
                       <p className="text-slate-400 leading-relaxed">{exp.description}</p>
-                      <div>
-                        <h4 className="font-semibold text-slate-50 mb-3">Key Achievements:</h4>
-                        <ul className="space-y-2">
-                          {exp.achievements.map((achievement, i) => (
-                            <li key={i} className="flex items-start gap-2">
-                              <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 flex-shrink-0"></div>
-                              <span className="text-slate-400">{achievement}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
+                      {exp.achievements.length > 0 && (
+                        <div>
+                          <h4 className="font-semibold text-slate-50 mb-3">Key Achievements:</h4>
+                          <ul className="space-y-2">
+                            {exp.achievements.map((achievement, i) => (
+                              <li key={i} className="flex items-start gap-2">
+                                <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 flex-shrink-0"></div>
+                                <span className="text-slate-400">{achievement}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
                     </CardContent>
                   </Card>
                 ))}
