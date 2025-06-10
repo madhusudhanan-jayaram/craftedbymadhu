@@ -22,6 +22,16 @@ export const Hero = () => {
     fileInputRef.current?.click();
   };
 
+  const handleDownloadCV = () => {
+    // Create a temporary link element to trigger download
+    const link = document.createElement('a');
+    link.href = '/cv.pdf'; // This would be the path to your CV file
+    link.download = 'Madhusudhanan_Jeyaram_CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-slate-900">
       <div className="container mx-auto px-4 relative z-10 pt-16">
@@ -62,6 +72,7 @@ export const Hero = () => {
                   variant="outline" 
                   size="lg" 
                   className="border-2 border-orange-400 text-orange-400 hover:bg-orange-400 hover:text-slate-900 px-8 py-6 rounded-lg text-lg transition-all duration-300 hover:scale-105"
+                  onClick={handleDownloadCV}
                 >
                   <Download size={20} />
                   <span className="flex items-center gap-2">

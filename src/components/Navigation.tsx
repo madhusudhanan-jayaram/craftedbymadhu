@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -37,13 +38,6 @@ export const Navigation = () => {
             ))}
           </div>
 
-          {/* Download CV Button */}
-          <div className="hidden md:block">
-            <button className="bg-orange-400 hover:bg-orange-500 text-slate-900 px-6 py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105">
-              Download CV
-            </button>
-          </div>
-
           {/* Mobile Menu Button */}
           <button className="md:hidden text-orange-400" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -58,9 +52,6 @@ export const Navigation = () => {
                 {item.label}
               </a>
             ))}
-            <button className="w-full mt-4 bg-orange-400 hover:bg-orange-500 text-slate-900 px-6 py-2 rounded-lg font-medium transition-all duration-300">
-              Download CV
-            </button>
           </div>
         )}
       </div>
