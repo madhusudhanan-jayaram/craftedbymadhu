@@ -1,4 +1,5 @@
 
+
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -25,10 +26,7 @@ export const Navigation = () => {
   return (
     <nav className="fixed top-0 w-full bg-slate-900/95 backdrop-blur-sm border-b border-slate-700 z-50">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
-          <div className="text-xl font-bold text-orange-400">
-          </div>
-          
+        <div className="flex justify-center items-center h-16">
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             {navItems.map(item => (
@@ -39,7 +37,7 @@ export const Navigation = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden text-orange-400" onClick={() => setIsOpen(!isOpen)}>
+          <button className="md:hidden text-orange-400 absolute right-4" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
@@ -58,3 +56,4 @@ export const Navigation = () => {
     </nav>
   );
 };
+
