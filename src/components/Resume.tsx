@@ -5,6 +5,14 @@ import { Briefcase, GraduationCap, Calendar } from "lucide-react";
 export const Resume = () => {
   const experience = [
     {
+      title: "Technology",
+      company: "Tata Consultancy Services",
+      location: "USA",
+      period: "Oct 2024 - Present",
+      description: "Championed full stack development best practices using Java, Spring Boot, Angular, and RESTful APIs for the Customer Center application, fostering a culture of continuous improvement and innovation.",
+      achievements: []
+    },
+    {
       title: "Application Development Manager",
       company: "Tata Consultancy Services",
       location: "USA, India",
