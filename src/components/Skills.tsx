@@ -1,7 +1,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import { Code, Brain, Briefcase } from "lucide-react";
+import { Code } from "lucide-react";
 
 export const Skills = () => {
   const technicalSkills = [
@@ -11,22 +11,6 @@ export const Skills = () => {
     { name: "Python", level: 85 },
     { name: "JavaScript/TypeScript", level: 92 },
     { name: "Java/J2EE", level: 90 },
-  ];
-
-  const aiSkills = [
-    { name: "Generative AI", level: 75 },
-    { name: "Machine Learning", level: 70 },
-    { name: "Natural Language Processing", level: 65 },
-    { name: "Ethical AI Practices", level: 80 },
-    { name: "AI System Architecture", level: 75 },
-  ];
-
-  const managementSkills = [
-    { name: "Agile Methodologies", level: 95 },
-    { name: "Project Leadership", level: 92 },
-    { name: "DevOps", level: 88 },
-    { name: "Team Management", level: 90 },
-    { name: "Strategic Planning", level: 85 },
   ];
 
   const SkillCard = ({ title, skills, icon: Icon }: any) => (
@@ -44,7 +28,7 @@ export const Skills = () => {
           <div key={skill.name}>
             <div className="flex justify-between mb-3">
               <span className="text-sm font-semibold text-slate-300">{skill.name}</span>
-              <span className="text-sm font-bold text-orange-400">{skill.level}%</span>
+              <span className="text-sm font-bold text-orange-400">{skill.level}</span>
             </div>
             <Progress value={skill.level} className="h-3" />
           </div>
@@ -66,24 +50,14 @@ export const Skills = () => {
             </p>
           </div>
           
-          <div className="grid lg:grid-cols-3 gap-8">
-            <SkillCard
-              title="Technical Skills"
-              skills={technicalSkills}
-              icon={Code}
-            />
-            
-            <SkillCard
-              title="AI & Machine Learning"
-              skills={aiSkills}
-              icon={Brain}
-            />
-            
-            <SkillCard
-              title="Leadership & Management"
-              skills={managementSkills}
-              icon={Briefcase}
-            />
+          <div className="flex justify-center">
+            <div className="w-full max-w-md">
+              <SkillCard
+                title="Technical Skills"
+                skills={technicalSkills}
+                icon={Code}
+              />
+            </div>
           </div>
         </div>
       </div>
