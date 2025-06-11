@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -17,6 +18,71 @@ export const Projects = () => {
           </div>
           
           <div className="space-y-8">
+            {/* EMI Calculator */}
+            <Card className="bg-slate-900 border-slate-700">
+              <CardHeader>
+                <CardTitle className="text-2xl text-slate-50 flex items-center gap-2">
+                  💰 EMI Calculator
+                </CardTitle>
+                <p className="text-lg text-orange-400 font-semibold">Frontend Developer - Financial Planning Tool</p>
+              </CardHeader>
+              
+              <CardContent className="space-y-6">
+                <p className="text-slate-400 leading-relaxed">An intuitive EMI calculator to help users plan their loans effectively. This web application provides dynamic calculations for various loan types with real-time results display.</p>
+                
+                <div>
+                  <h4 className="font-semibold text-lg mb-4 text-slate-50">Key Features</h4>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="space-y-3">
+                      <div className="flex items-start">
+                        <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span className="text-slate-400">🏠 Calculate EMI for personal, home, auto, or education loans</span>
+                      </div>
+                      <div className="flex items-start">
+                        <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span className="text-slate-400">📊 Dynamic input for principal amount, interest rate, and loan tenure</span>
+                      </div>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="flex items-start">
+                        <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span className="text-slate-400">💡 Displays monthly EMI, total interest payable, and total repayment amount</span>
+                      </div>
+                      <div className="flex items-start">
+                        <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span className="text-slate-400">User-friendly interface with responsive design</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 className="font-semibold text-lg mb-3 text-slate-50">Technologies Used</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">HTML</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">CSS</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">JavaScript</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Google AI Studio</Badge>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <Button asChild variant="outline" size="sm" className="bg-slate-800 border-orange-400/20 text-orange-400 hover:bg-orange-400/10">
+                    <a href="https://madhusudhanan-jayaram.github.io/EMI-Calculator/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                      <ExternalLink size={16} />
+                      Live Site
+                    </a>
+                  </Button>
+                  <Button asChild variant="outline" size="sm" className="bg-slate-800 border-orange-400/20 text-orange-400 hover:bg-orange-400/10">
+                    <a href="https://github.com/madhusudhanan-jayaram/EMI-Calculator" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                      <Github size={16} />
+                      GitHub Repo
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
             {/* Collections and Recovery System */}
             <Card className="bg-slate-900 border-slate-700">
               <CardHeader>
