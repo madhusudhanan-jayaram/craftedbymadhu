@@ -47,18 +47,6 @@ export const Hero = () => {
                   to transform business challenges into scalable opportunities.
                 </p>
               </div>
-              
-              {/* Action buttons */}
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button 
-                  size="lg" 
-                  className="bg-orange-400 hover:bg-orange-500 text-slate-900 font-semibold px-8 py-6 rounded-lg text-lg transition-all duration-300 hover:scale-105"
-                >
-                  <a href="#contact" className="flex items-center gap-2">
-                    Hire Me
-                  </a>
-                </Button>
-              </div>
             </div>
 
             {/* Right side - Profile image */}

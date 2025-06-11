@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { TrendingUp, CheckCheck, Award, Brain } from "lucide-react";
 
@@ -10,7 +9,7 @@ export const Statistics = () => {
     description: "Professional development"
   }, {
     icon: CheckCheck,
-    value: "4",
+    value: "5",
     label: "Projects Completed",
     description: "Successful deliveries"
   }, {
