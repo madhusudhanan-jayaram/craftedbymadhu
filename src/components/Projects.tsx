@@ -88,7 +88,7 @@ export const Projects = () => {
                 <CardTitle className="text-2xl text-slate-50 flex items-center gap-2">
                   🏦 Customer Service - Retail Banking
                 </CardTitle>
-                <p className="text-lg text-orange-400 font-semibold">Technical Lead - Internal Citi Customer Service App Modernization</p>
+                <p className="text-lg text-orange-400 font-semibold">Technical Lead - Citi Customer Service App Modernization</p>
               </CardHeader>
               
               <CardContent className="space-y-6">
