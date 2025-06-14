@@ -153,6 +153,8 @@ export const Projects = () => {
                     <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">HashiCorp Vault</Badge>
                     <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Tekton pipelines</Badge>
                     <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Harness</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Micro Frontend</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Modular Federation Webpack</Badge>
                   </div>
                 </div>
               </CardContent>
