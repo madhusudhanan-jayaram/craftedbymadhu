@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -206,18 +207,21 @@ export const Projects = () => {
                 
                 <div className="bg-slate-800 p-6 rounded-lg border border-slate-700">
                   <h4 className="font-semibold text-lg mb-3 text-orange-400">Performance Metrics</h4>
-                  <div className="space-y-4">
-                    <div className="flex items-start">
-                      <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-slate-400">Reduced credit decisioning time by 40%, saving approximately $350,000 annually in operational and processing costs</span>
+                  <div className="grid md:grid-cols-3 gap-4">
+                    <div className="text-center">
+                      <div className="text-3xl font-bold text-orange-400">40%</div>
+                      <div className="text-sm text-slate-400">Credit Decisioning Time Reduction</div>
+                      <div className="text-xs text-slate-500 mt-1">($350K Annual Savings)</div>
                     </div>
-                    <div className="flex items-start">
-                      <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-slate-400">Improved system response time by 65%, increasing productivity and saving around $200,000 per year</span>
+                    <div className="text-center">
+                      <div className="text-3xl font-bold text-orange-400">65%</div>
+                      <div className="text-sm text-slate-400">System Response Time Improvement</div>
+                      <div className="text-xs text-slate-500 mt-1">($200K Annual Savings)</div>
                     </div>
-                    <div className="flex items-start">
-                      <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-slate-400">Lowered legacy system dependency by 70%, reducing maintenance and risk-related costs by $400,000 annually</span>
+                    <div className="text-center">
+                      <div className="text-3xl font-bold text-orange-400">70%</div>
+                      <div className="text-sm text-slate-400">Legacy System Dependency Reduction</div>
+                      <div className="text-xs text-slate-500 mt-1">($400K Annual Savings)</div>
                     </div>
                   </div>
                 </div>
