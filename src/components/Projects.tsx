@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -257,28 +256,30 @@ export const Projects = () => {
                 <p className="text-slate-400 leading-relaxed">Contributed to the modernization of enterprise banking applications in Collections, Recovery, and Payments by migrating legacy systems to scalable Java/J2EE architectures. Led end-to-end development, integration, and CI/CD improvements, ensuring performance, compliance, and reliability in a highly regulated environment.</p>
                 
                 <div>
-                  <h4 className="font-semibold text-lg mb-4 text-slate-50">Key Features</h4>
+                  <h4 className="font-semibold text-lg mb-4 text-slate-50">🔧 What I Did</h4>
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="space-y-3">
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-slate-400">Legacy Modernization: Migrated mission-critical applications from Visual Basic to Java/J2EE, enhancing performance, security, and maintainability.</span>
+                        <span className="text-slate-400">Led migration from VB to Java Full Stack, improving system scalability and maintainability</span>
                       </div>
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-slate-400">Scalable Architecture: Applied MVC architecture and best practices in Java Full Stack to build scalable, modular, and resilient applications.</span>
+                        <span className="text-slate-400">Integrated TIBCO services for seamless data exchange and process orchestration</span>
                       </div>
-                      
+                      <div className="flex items-start">
+                        <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span className="text-slate-400">Implemented business rules for collections decisioning and workflow automation</span>
+                      </div>
                     </div>
                     <div className="space-y-3">
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-slate-400">System Integration: Integrated mainframe systems with TIBCO ESB and modern web applications to ensure seamless data exchange and process consistency</span>
+                        <span className="text-slate-400">Enhanced UI/UX to improve agent efficiency and reduce error rates</span>
                       </div>
-                      
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-slate-400">Cost Optimization: Reduced operational costs by modernizing legacy workflows and automating key processes within recovery and payments</span>
+                        <span className="text-slate-400">Collaborated with risk and compliance teams to ensure policy adherence and audit readiness</span>
                       </div>
                     </div>
                   </div>
