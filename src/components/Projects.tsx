@@ -206,18 +206,18 @@ export const Projects = () => {
                 
                 <div className="bg-slate-800 p-6 rounded-lg border border-slate-700">
                   <h4 className="font-semibold text-lg mb-3 text-orange-400">Performance Metrics</h4>
-                  <div className="grid md:grid-cols-3 gap-4">
-                    <div className="text-center">
-                      <div className="text-3xl font-bold text-orange-400">$14.9M+</div>
-                      <div className="text-sm text-slate-400">Total Cost Savings</div>
+                  <div className="space-y-4">
+                    <div className="flex items-start">
+                      <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                      <span className="text-slate-400">Reduced credit decisioning time by 40%, saving approximately $350,000 annually in operational and processing costs</span>
                     </div>
-                    <div className="text-center">
-                      <div className="text-3xl font-bold text-orange-400">30%+</div>
-                      <div className="text-sm text-slate-400">Reduction in Cyber Risks</div>
+                    <div className="flex items-start">
+                      <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                      <span className="text-slate-400">Improved system response time by 65%, increasing productivity and saving around $200,000 per year</span>
                     </div>
-                    <div className="text-center">
-                      <div className="text-3xl font-bold text-orange-400">40%</div>
-                      <div className="text-sm text-slate-400">Reduction in Deployment Time</div>
+                    <div className="flex items-start">
+                      <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                      <span className="text-slate-400">Lowered legacy system dependency by 70%, reducing maintenance and risk-related costs by $400,000 annually</span>
                     </div>
                   </div>
                 </div>
