@@ -171,7 +171,7 @@ export const Projects = () => {
               </CardHeader>
               
               <CardContent className="space-y-6">
-                <p className="text-slate-400 leading-relaxed">Led full-stack, cross-functional teams to deliver banking system solutions by migrating legacy applications to microservices, driving modernization initiatives while enhancing cybersecurity, ensuring compliance, and strengthening application governance for decisioning, lending, and credit line increase platforms.</p>
+                <p className="text-slate-400 leading-relaxed">Led the modernization of Citi's internal application used for credit card and personal loan decisioning. The legacy platform, built on vanilla JS, HTML/CSS, and TIBCO, was migrated to a Spring Boot stack. This application is used by internal users to evaluate and decision customer applications for retail and small business banking products.</p>
                 
                 <div>
                   <h4 className="font-semibold text-lg mb-4 text-slate-50">Key Features</h4>
