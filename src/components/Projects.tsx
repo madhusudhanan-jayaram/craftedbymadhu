@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -83,58 +82,70 @@ export const Projects = () => {
               </CardContent>
             </Card>
 
-            {/* Collections and Recovery System */}
+            {/* Customer Service - Retail Banking */}
             <Card className="bg-slate-900 border-slate-700">
               <CardHeader>
-                <CardTitle className="text-2xl text-slate-50">Customer Service - Retail Banking</CardTitle>
-                <p className="text-lg text-orange-400 font-semibold">Technical Lead - Enterprise Modernization</p>
+                <CardTitle className="text-2xl text-slate-50 flex items-center gap-2">
+                  🏦 Customer Service - Retail Banking
+                </CardTitle>
+                <p className="text-lg text-orange-400 font-semibold">Technical Lead - Internal Citi Customer Service App Modernization</p>
               </CardHeader>
               
               <CardContent className="space-y-6">
-                <p className="text-slate-400 leading-relaxed">Led the modernization of critical banking applications (Collections, Recovery, Payments) by migrating legacy systems to Java/J2EE, delivering secure, scalable solutions that aligned with business goals. Drove technical excellence through architecture redesign, performance optimization, and cross-functional collaboration.</p>
+                <p className="text-slate-400 leading-relaxed">Led the modernization of an internal Citi customer service app, migrating it from a legacy Java system to a modern tech stack using Angular and Spring Boot. The app supports Citi reps in handling customer queries for retail banking.</p>
                 
                 <div>
-                  <h4 className="font-semibold text-lg mb-4 text-slate-50">Key Achievements</h4>
+                  <h4 className="font-semibold text-lg mb-4 text-slate-50">🔧 What I Did</h4>
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="space-y-3">
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-slate-400">Modernized legacy banking systems to Java/J2EE architecture</span>
+                        <span className="text-slate-400">Led the frontend and backend migration efforts</span>
                       </div>
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-slate-400">
-                          Implemented Service Worker for enhanced performance
-                        </span>
+                        <span className="text-slate-400">Rebuilt UI in Angular for a faster, user-friendly experience</span>
+                      </div>
+                      <div className="flex items-start">
+                        <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span className="text-slate-400">Redesigned backend using Spring Boot and REST APIs</span>
                       </div>
                     </div>
                     <div className="space-y-3">
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-slate-400">
-                          Enhanced security protocols and compliance standards
-                        </span>
+                        <span className="text-slate-400">Integrated secure login with role-based access</span>
                       </div>
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-slate-400">
-                          Improved team productivity through agile methodologies
-                        </span>
+                        <span className="text-slate-400">Coordinated with product and infra teams for smooth delivery</span>
                       </div>
                     </div>
                   </div>
                 </div>
                 
                 <div className="bg-slate-800 p-6 rounded-lg border border-slate-700">
-                  <h4 className="font-semibold text-lg mb-3 text-orange-400">Impact & Results</h4>
+                  <h4 className="font-semibold text-lg mb-3 text-orange-400">🌟 Key Achievements</h4>
                   <div className="grid md:grid-cols-2 gap-4">
-                    <div className="text-center">
-                      <div className="text-3xl font-bold text-orange-400">$500K</div>
-                      <div className="text-sm text-slate-400">Annual Development Cost Savings</div>
+                    <div className="space-y-2">
+                      <div className="flex items-start">
+                        <span className="text-green-400 mr-2">✅</span>
+                        <span className="text-slate-400 text-sm">Reduced customer support response time by 30%</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-green-400 mr-2">✅</span>
+                        <span className="text-slate-400 text-sm">Improved app speed and performance by 60%</span>
+                      </div>
                     </div>
-                    <div className="text-center">
-                      <div className="text-3xl font-bold text-orange-400">$200K</div>
-                      <div className="text-sm text-slate-400">Time-to-Market & Resource Cost Savings</div>
+                    <div className="space-y-2">
+                      <div className="flex items-start">
+                        <span className="text-green-400 mr-2">✅</span>
+                        <span className="text-slate-400 text-sm">Increased internal user satisfaction by 45%</span>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-green-400 mr-2">✅</span>
+                        <span className="text-slate-400 text-sm">Delivered seamless, zero-downtime migration</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -142,10 +153,11 @@ export const Projects = () => {
                 <div>
                   <h4 className="font-semibold text-lg mb-3 text-slate-50">Technologies Used</h4>
                   <div className="flex flex-wrap gap-2">
-                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Java/J2EE</Badge>
-                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">DevOps</Badge>
-                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Agile</Badge>
-                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Enterprise Architecture</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Angular</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Spring Boot</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Java</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">REST APIs</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Role-based Access</Badge>
                   </div>
                 </div>
               </CardContent>
