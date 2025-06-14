@@ -92,7 +92,7 @@ export const Projects = () => {
               </CardHeader>
               
               <CardContent className="space-y-6">
-                <p className="text-slate-400 leading-relaxed">Led the modernization of an internal Citi customer service app, migrating it from a legacy Java system to a modern tech stack using Angular and Spring Boot. The app supports Citi reps in handling customer queries for retail banking.</p>
+                <p className="text-slate-400 leading-relaxed">Led the modernization of a Citi customer service app, migrating it from a legacy Java system to a modern tech stack using Angular and Spring Boot. The app supports Citi reps in handling customer queries for retail banking.</p>
                 
                 <div>
                   <h4 className="font-semibold text-lg mb-4 text-slate-50">🔧 What I Did</h4>
