@@ -1,5 +1,3 @@
-
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -127,27 +125,19 @@ export const Projects = () => {
                 </div>
                 
                 <div className="bg-slate-800 p-6 rounded-lg border border-slate-700">
-                  <h4 className="font-semibold text-lg mb-3 text-orange-400">🌟 Key Achievements</h4>
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <div className="flex items-start">
-                        <span className="text-green-400 mr-2">✅</span>
-                        <span className="text-slate-400 text-sm">Reduced customer support response time by 30%</span>
-                      </div>
-                      <div className="flex items-start">
-                        <span className="text-green-400 mr-2">✅</span>
-                        <span className="text-slate-400 text-sm">Improved app speed and performance by 60%</span>
-                      </div>
+                  <h4 className="font-semibold text-lg mb-3 text-orange-400">Performance Metrics</h4>
+                  <div className="grid md:grid-cols-3 gap-4">
+                    <div className="text-center">
+                      <div className="text-3xl font-bold text-orange-400">$250K</div>
+                      <div className="text-sm text-slate-400">Annual Operational Cost Savings</div>
                     </div>
-                    <div className="space-y-2">
-                      <div className="flex items-start">
-                        <span className="text-green-400 mr-2">✅</span>
-                        <span className="text-slate-400 text-sm">Increased internal user satisfaction by 45%</span>
-                      </div>
-                      <div className="flex items-start">
-                        <span className="text-green-400 mr-2">✅</span>
-                        <span className="text-slate-400 text-sm">Delivered seamless, zero-downtime migration</span>
-                      </div>
+                    <div className="text-center">
+                      <div className="text-3xl font-bold text-orange-400">$300K</div>
+                      <div className="text-sm text-slate-400">Annual IT Support & Upgrade Savings</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-3xl font-bold text-orange-400">99.9%</div>
+                      <div className="text-sm text-slate-400">Uptime (Preventing $150K/year losses)</div>
                     </div>
                   </div>
                 </div>
@@ -398,4 +388,3 @@ export const Projects = () => {
       </div>
     </section>;
 };
-
