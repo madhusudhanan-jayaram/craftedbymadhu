@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -157,7 +158,10 @@ export const Projects = () => {
                     <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Spring Boot</Badge>
                     <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Java</Badge>
                     <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">REST APIs</Badge>
-                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Role-based Access</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Cloud Native Application</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">HashiCorp Vault</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Tekton pipelines</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Harness</Badge>
                   </div>
                 </div>
               </CardContent>
