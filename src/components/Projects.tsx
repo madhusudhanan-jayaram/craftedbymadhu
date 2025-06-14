@@ -1,4 +1,5 @@
 
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -237,7 +238,10 @@ export const Projects = () => {
                     <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Javascript</Badge>
                     <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Microservice</Badge>
                     <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Angular</Badge>
-                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Kubernetes</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Cloud Native Application</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">HashiCorp Vault</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Jenkin pipelines</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Harness</Badge>
                     <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Oracle</Badge>
                     <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">REST API</Badge>
                   </div>
@@ -394,3 +398,4 @@ export const Projects = () => {
       </div>
     </section>;
 };
+
