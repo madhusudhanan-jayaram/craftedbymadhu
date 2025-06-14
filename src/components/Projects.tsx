@@ -174,35 +174,34 @@ export const Projects = () => {
                 <p className="text-slate-400 leading-relaxed">Led the modernization of Citi's internal application used for credit card and personal loan decisioning. The legacy platform, built on vanilla JS, HTML/CSS, and TIBCO, was migrated to a Spring Boot stack. This application is used by internal users to evaluate and decision customer applications for retail and small business banking products.</p>
                 
                 <div>
-                  <h4 className="font-semibold text-lg mb-4 text-slate-50">Key Features</h4>
+                  <h4 className="font-semibold text-lg mb-4 text-slate-50">🔧 What I Did</h4>
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="space-y-3">
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-slate-400">Led full-stack teams to migrate legacy banking apps to scalable Tibco / microservices</span>
+                        <span className="text-slate-400">Led the frontend migration from the legacy stack to HTML, CSS, JavaScript, TIBCO, and Spring Boot microservices, improving usability and performance</span>
                       </div>
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-slate-400">Enhanced cybersecurity posture through proactive vulnerability remediation</span>
+                        <span className="text-slate-400">Designed and integrated internal services to fetch letters, Credit Bureau data, ECM documents, credit history, KYC, and income verification</span>
                       </div>
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-slate-400">Ensured strict regulatory compliance including PCI-DSS, KYC, and AML standards</span>
+                        <span className="text-slate-400">Implemented RBAC and decision logic for bank cards, business cards, and personal loans</span>
                       </div>
                     </div>
                     <div className="space-y-3">
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-slate-400">Implemented application governance to mitigate operational and security risks</span>
+                        <span className="text-slate-400">Coordinated with the rule engine team for seamless credit decisioning logic integration</span>
                       </div>
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-slate-400">Drove adoption of microservice patterns (circuit breaker, API gateway) for resilience</span>
+                        <span className="text-slate-400">Collaborated with product and risk teams to ensure policy compliance and audit traceability</span>
                       </div>
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-slate-400">Fostered cross-functional collaboration across engineering, security, and architecture teams
-                      </span>
+                        <span className="text-slate-400">Part of the defense team to fix security and network issues, ensure compliance, upgrade outdated software (EOVS), and keep open-source frameworks up to date</span>
                       </div>
                     </div>
                   </div>
