@@ -33,8 +33,7 @@ export const Hero = () => {
                 <div className="space-y-2">
                   <p className="text-orange-400 font-medium text-lg">Hello, I'm</p>
                   <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-                    Madhusudhanan{" "}
-                    <span className="text-orange-400">Jeyaram</span>
+                    Madhu
                   </h1>
                   <p className="text-2xl lg:text-3xl text-slate-300 font-medium">
                     Technology Leader & AI Enthusiast
@@ -63,7 +62,7 @@ export const Hero = () => {
                       {profileImage ? (
                         <img 
                           src={profileImage} 
-                          alt="Madhusudhanan Jeyaram" 
+                          alt="Madhu" 
                           className="w-full h-full object-cover"
                         />
                       ) : (
