@@ -62,6 +62,7 @@ export const Projects = () => {
                     <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">CSS</Badge>
                     <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">JavaScript</Badge>
                     <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Google AI Studio</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Vibe Coding</Badge>
                   </div>
                 </div>
 
