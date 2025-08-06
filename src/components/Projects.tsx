@@ -112,15 +112,6 @@ export const Projects = () => {
                     <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Seaborn</Badge>
                   </div>
                 </div>
-
-                <div className="flex gap-4">
-                  <Button asChild variant="outline" size="sm" className="bg-slate-800 border-orange-400/20 text-orange-400 hover:bg-orange-400/10">
-                    <a href="https://github.com/madhusudhanan-jayaram/CKD-Prediction" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                      <Github size={16} />
-                      GitHub Repo
-                    </a>
-                  </Button>
-                </div>
               </CardContent>
             </Card>
 
