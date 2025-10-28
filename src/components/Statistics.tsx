@@ -10,7 +10,7 @@ export const Statistics = () => {
   }, {
     icon: CheckCheck,
     value: "5",
-    label: "Projects Completed",
+    label: "Enterprise Projects Completed",
     description: "Successful deliveries"
   }, {
     icon: Brain,
