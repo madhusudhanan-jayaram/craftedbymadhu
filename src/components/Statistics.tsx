@@ -15,7 +15,7 @@ export const Statistics = () => {
   }, {
     icon: Brain,
     value: "3",
-    label: "AI Projects Deployed",
+    label: "AI Projects Deployed (CAPSTONE Self)",
     description: "Intelligent solutions"
   }, {
     icon: Award,
