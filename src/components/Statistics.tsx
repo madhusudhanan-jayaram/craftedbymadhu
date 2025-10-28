@@ -4,7 +4,7 @@ import { TrendingUp, CheckCheck, Award, Brain } from "lucide-react";
 export const Statistics = () => {
   const stats = [{
     icon: TrendingUp,
-    value: "17+",
+    value: "18+",
     label: "Years Experience",
     description: "Professional development"
   }, {
