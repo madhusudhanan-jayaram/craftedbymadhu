@@ -14,7 +14,7 @@ export const Statistics = () => {
     description: "Successful deliveries"
   }, {
     icon: Brain,
-    value: "2",
+    value: "3",
     label: "AI Projects Deployed",
     description: "Intelligent solutions"
   }, {
