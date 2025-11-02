@@ -57,15 +57,24 @@ export const Projects = () => {
                 </div>
                 
                 <div className="bg-slate-800 p-6 rounded-lg border border-slate-700">
-                  <h4 className="font-semibold text-lg mb-3 text-orange-400">Acknowledgments</h4>
-                  <p className="text-slate-400 leading-relaxed italic">
-                    "Proud to have combined frontend development and machine learning to build a complete end-to-end project."
-                  </p>
-                  <p className="text-sm text-slate-400 mt-3">
-                    Special thanks to <span className="font-semibold text-slate-300">Ramya Dinesh</span>,{" "}
-                    <span className="font-semibold text-slate-300">Hope Artificial Intelligence Pvt Ltd</span>, and{" "}
-                    <span className="font-semibold text-slate-300">Ramisha Rani K</span> for their constant support.
-                  </p>
+                  <h4 className="font-semibold text-lg mb-3 text-orange-400">Model Performance Results</h4>
+                  <div className="grid md:grid-cols-3 gap-4">
+                    <div className="text-center">
+                      <div className="text-3xl font-bold text-orange-400">92%</div>
+                      <div className="text-sm text-slate-400">Model Accuracy</div>
+                      <div className="text-xs text-slate-500 mt-1">Gradient Boosting Classifier</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-3xl font-bold text-orange-400">89%</div>
+                      <div className="text-sm text-slate-400">Precision Score</div>
+                      <div className="text-xs text-slate-500 mt-1">Minimizing False Approvals</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-3xl font-bold text-orange-400">91%</div>
+                      <div className="text-sm text-slate-400">Recall Score</div>
+                      <div className="text-xs text-slate-500 mt-1">Identifying Valid Approvals</div>
+                    </div>
+                  </div>
                 </div>
                 
                 <div>
