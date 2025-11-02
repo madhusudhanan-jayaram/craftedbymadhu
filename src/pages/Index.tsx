@@ -17,7 +17,13 @@ const Index = () => {
       <Resume />
       <Skills />
       <Projects />
-      <LoanProjectShowcase />
+      <section className="py-20 bg-slate-800">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <LoanProjectShowcase />
+          </div>
+        </div>
+      </section>
       <Contact />
     </div>
   );
