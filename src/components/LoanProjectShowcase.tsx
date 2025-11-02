@@ -7,7 +7,7 @@ export const LoanProjectShowcase = () => {
   return (
     <Card className="bg-slate-900 border-slate-700">
       <CardHeader>
-        <CardTitle className="text-2xl text-slate-50">🚦 Loan Approval Prediction</CardTitle>
+        <CardTitle className="text-2xl text-slate-50">Loan Approval Prediction</CardTitle>
         <p className="text-lg text-orange-400 font-semibold">Machine Learning Engineer - End-to-End AI Solution</p>
       </CardHeader>
       

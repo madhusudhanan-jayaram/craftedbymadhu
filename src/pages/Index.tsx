@@ -16,7 +16,6 @@ const Index = () => {
       <Statistics />
       <Resume />
       <Skills />
-      <Projects />
       <section className="py-20 bg-slate-800">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
@@ -24,6 +23,7 @@ const Index = () => {
           </div>
         </div>
       </section>
+      <Projects />
       <Contact />
     </div>
   );
