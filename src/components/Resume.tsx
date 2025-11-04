@@ -76,7 +76,7 @@ export const Resume = () => {
             </p>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="space-y-16">
             {/* Experience */}
             <div>
               <div className="flex items-center gap-3 mb-8">
@@ -133,7 +133,7 @@ export const Resume = () => {
                 <h3 className="text-2xl font-bold text-slate-50">Education</h3>
               </div>
               
-              <div className="space-y-8">
+              <div className="grid md:grid-cols-2 gap-8">
                 {education.map((edu, index) => (
                   <Card key={index} className="bg-slate-900 border-slate-700">
                     <CardHeader>
