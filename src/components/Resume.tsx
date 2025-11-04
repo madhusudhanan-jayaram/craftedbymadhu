@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Briefcase, GraduationCap, Calendar } from "lucide-react";
 
 export const Resume = () => {
@@ -76,88 +77,79 @@ export const Resume = () => {
             </p>
           </div>
           
-          <div className="space-y-16">
-            {/* Experience */}
-            <div>
-              <div className="flex items-center gap-3 mb-8">
-                <div className="w-12 h-12 bg-orange-400/10 rounded-lg flex items-center justify-center">
-                  <Briefcase className="text-orange-400" size={24} />
-                </div>
-                <h3 className="text-2xl font-bold text-slate-50">Experience</h3>
-              </div>
-              
-              <div className="space-y-8">
-                {experience.map((exp, index) => (
-                  <Card key={index} className="bg-slate-900 border-slate-700">
-                    <CardHeader>
-                      <CardTitle className="text-xl text-slate-50">{exp.title}</CardTitle>
-                      <div className="space-y-2">
-                        <p className="text-orange-400 font-semibold">{exp.company}</p>
-                        <div className="flex items-center gap-4 text-slate-400">
-                          <div className="flex items-center gap-2">
-                            <Calendar size={16} />
-                            <span>{exp.period}</span>
-                          </div>
-                          <span>•</span>
-                          <span>{exp.location}</span>
+          <Tabs defaultValue="experience" className="w-full">
+            <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-12 bg-slate-900 border border-slate-700">
+              <TabsTrigger value="experience" className="data-[state=active]:bg-orange-400 data-[state=active]:text-white">
+                <Briefcase className="mr-2" size={18} />
+                Experience
+              </TabsTrigger>
+              <TabsTrigger value="education" className="data-[state=active]:bg-orange-400 data-[state=active]:text-white">
+                <GraduationCap className="mr-2" size={18} />
+                Education
+              </TabsTrigger>
+            </TabsList>
+            
+            <TabsContent value="experience" className="space-y-8">
+              {experience.map((exp, index) => (
+                <Card key={index} className="bg-slate-900 border-slate-700">
+                  <CardHeader>
+                    <CardTitle className="text-xl text-slate-50">{exp.title}</CardTitle>
+                    <div className="space-y-2">
+                      <p className="text-orange-400 font-semibold">{exp.company}</p>
+                      <div className="flex items-center gap-4 text-slate-400">
+                        <div className="flex items-center gap-2">
+                          <Calendar size={16} />
+                          <span>{exp.period}</span>
                         </div>
+                        <span>•</span>
+                        <span>{exp.location}</span>
                       </div>
-                    </CardHeader>
-                    <CardContent className="space-y-4">
-                      <p className="text-slate-400 leading-relaxed">{exp.description}</p>
-                      {exp.achievements.length > 0 && (
-                        <div>
-                          <h4 className="font-semibold text-slate-50 mb-3">Key Achievements:</h4>
-                          <ul className="space-y-2">
-                            {exp.achievements.map((achievement, i) => (
-                              <li key={i} className="flex items-start gap-2">
-                                <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 flex-shrink-0"></div>
-                                <span className="text-slate-400">{achievement}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      )}
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </div>
-
-            {/* Education */}
-            <div>
-              <div className="flex items-center gap-3 mb-8">
-                <div className="w-12 h-12 bg-orange-400/10 rounded-lg flex items-center justify-center">
-                  <GraduationCap className="text-orange-400" size={24} />
-                </div>
-                <h3 className="text-2xl font-bold text-slate-50">Education</h3>
-              </div>
-              
-              <div className="grid md:grid-cols-2 gap-8">
-                {education.map((edu, index) => (
-                  <Card key={index} className="bg-slate-900 border-slate-700">
-                    <CardHeader>
-                      <CardTitle className="text-xl text-slate-50">{edu.degree}</CardTitle>
-                      <div className="space-y-2">
-                        <p className="text-orange-400 font-semibold">{edu.institution}</p>
-                        <div className="flex items-center gap-4 text-slate-400">
-                          <div className="flex items-center gap-2">
-                            <Calendar size={16} />
-                            <span>{edu.period}</span>
-                          </div>
-                          <span>•</span>
-                          <span>{edu.location}</span>
-                        </div>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <p className="text-slate-400 leading-relaxed">{exp.description}</p>
+                    {exp.achievements.length > 0 && (
+                      <div>
+                        <h4 className="font-semibold text-slate-50 mb-3">Key Achievements:</h4>
+                        <ul className="space-y-2">
+                          {exp.achievements.map((achievement, i) => (
+                            <li key={i} className="flex items-start gap-2">
+                              <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 flex-shrink-0"></div>
+                              <span className="text-slate-400">{achievement}</span>
+                            </li>
+                          ))}
+                        </ul>
                       </div>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-slate-400 leading-relaxed">{edu.description}</p>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </div>
-          </div>
+                    )}
+                  </CardContent>
+                </Card>
+              ))}
+            </TabsContent>
+            
+            <TabsContent value="education" className="grid md:grid-cols-2 gap-8">
+              {education.map((edu, index) => (
+                <Card key={index} className="bg-slate-900 border-slate-700">
+                  <CardHeader>
+                    <CardTitle className="text-xl text-slate-50">{edu.degree}</CardTitle>
+                    <div className="space-y-2">
+                      <p className="text-orange-400 font-semibold">{edu.institution}</p>
+                      <div className="flex items-center gap-4 text-slate-400">
+                        <div className="flex items-center gap-2">
+                          <Calendar size={16} />
+                          <span>{edu.period}</span>
+                        </div>
+                        <span>•</span>
+                        <span>{edu.location}</span>
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-slate-400 leading-relaxed">{edu.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </TabsContent>
+          </Tabs>
         </div>
       </div>
     </section>
