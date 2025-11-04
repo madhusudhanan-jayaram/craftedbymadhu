@@ -36,14 +36,15 @@ export const Hero = () => {
                     Madhu
                   </h1>
                   <p className="text-2xl lg:text-3xl text-slate-300 font-medium">
-                    Technology Leader & AI Enthusiast
+                    AI & Cloud Transformation Strategist
                   </p>
                 </div>
                 
                 <p className="text-lg text-slate-400 max-w-lg leading-relaxed">
-                  Passionate Technology Leader driving innovation through AI and intelligent systems. 
-                  With 17+ years of experience, I bridge traditional engineering with cutting-edge AI solutions 
-                  to transform business challenges into scalable opportunities.
+                  I'm an AI & Cloud Transformation Strategist with deep experience across Collections, Payments, Acquisitions, Lending, Customer Service, and Feedback applications in the Banking & Financial Services domain.
+                </p>
+                <p className="text-lg text-slate-400 max-w-lg leading-relaxed">
+                  I specialize in application governance, modernization, and cloud-first transformation — blending security, scalability, and innovation to deliver meaningful digital impact.
                 </p>
               </div>
             </div>
