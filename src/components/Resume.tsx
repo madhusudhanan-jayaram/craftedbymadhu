@@ -9,7 +9,7 @@ export const Resume = () => {
       company: "Tata Consultancy Services",
       location: "USA",
       period: "Oct 2024 - Present",
-      description: "Driving modernization of Citibank's customer feedback platform into a secure, cloud-native, and scalable solution on OpenShift. Architecting Helm-based deployments, automating CI/CD pipelines with Harness, and managing secrets via HashiCorp Vault and Spring Config. Integrating Apigee and PSG for governance and secure routing, ensuring 99.9% release success with 60% faster deployments. Enhancing observability through AppDynamics and Splunk, and mentoring teams on DevSecOps, automation, and cloud-native best practices.",
+      description: "Driving modernization of Citibank's customer feedback platform into a secure, cloud-native, and scalable solution on OpenShift. Architecting Helm-based deployments, automating CI/CD pipelines with Harness, and managing secrets via HashiCorp Vault and Spring Config. Integrating Apigee and PSG for governance and secure routing. Enhancing observability through AppDynamics and Splunk, and mentoring teams on DevSecOps, automation, and cloud-native best practices.",
       achievements: []
     },
     {
