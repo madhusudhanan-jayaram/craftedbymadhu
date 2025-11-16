@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ExternalLink, Github } from "lucide-react";
 
 export const Projects = () => {
@@ -16,8 +17,14 @@ export const Projects = () => {
             </p>
           </div>
           
-          <div className="space-y-8">
-            {/* Loan Approval Prediction */}
+          <Tabs defaultValue="enterprise" className="w-full">
+            <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-8">
+              <TabsTrigger value="enterprise">Enterprise Projects</TabsTrigger>
+              <TabsTrigger value="ai">AI Personal Projects</TabsTrigger>
+            </TabsList>
+            
+            <TabsContent value="enterprise" className="space-y-8">
+              {/* Customer Service - Retail Banking */}
             <Card className="bg-slate-900 border-slate-700">
               <CardHeader>
                 <CardTitle className="text-2xl text-slate-50">Loan Approval Prediction</CardTitle>
@@ -587,7 +594,12 @@ export const Projects = () => {
                 </div>
               </CardContent>
             </Card>
-          </div>
+            </TabsContent>
+            
+            <TabsContent value="ai" className="space-y-8">
+              {/* AI Personal Projects will go here */}
+            </TabsContent>
+          </Tabs>
         </div>
       </div>
     </section>;
