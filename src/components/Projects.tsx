@@ -596,6 +596,230 @@ export const Projects = () => {
                 </div>
               </CardContent>
             </Card>
+
+            {/* LLM Integration & AI Application Development */}
+            <Card className="bg-slate-900 border-slate-700">
+              <CardHeader>
+                <CardTitle className="text-2xl text-slate-50 flex items-center gap-2">
+                  🤖 LLM Integration & AI Application Development
+                </CardTitle>
+                <p className="text-lg text-orange-400 font-semibold">Build System with ChatGPT API</p>
+              </CardHeader>
+              
+              <CardContent className="space-y-6">
+                <p className="text-slate-400 leading-relaxed">An experimental project focused on understanding how large language models can be integrated into real-world applications using APIs. The project explores prompt design, request orchestration, and response handling for building intelligent AI-powered systems.</p>
+                
+                <div>
+                  <h4 className="font-semibold text-lg mb-4 text-slate-50">Key Highlights</h4>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="space-y-3">
+                      <div className="flex items-start">
+                        <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span className="text-slate-400">Integrated ChatGPT APIs to build LLM-powered workflows</span>
+                      </div>
+                      <div className="flex items-start">
+                        <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span className="text-slate-400">Experimented with prompt engineering and response optimization</span>
+                      </div>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="flex items-start">
+                        <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span className="text-slate-400">Designed modular architecture for extensibility and reuse</span>
+                      </div>
+                      <div className="flex items-start">
+                        <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span className="text-slate-400">Gained hands-on experience with LLM-driven application patterns</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 className="font-semibold text-lg mb-3 text-slate-50">Technologies Used</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Python</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">OpenAI API</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">REST APIs</Badge>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <Button asChild variant="outline" size="sm" className="bg-slate-800 border-orange-400/20 text-orange-400 hover:bg-orange-400/10">
+                    <a href="https://github.com/madhusudhanan-jayaram/buildingsystem_with_chatgpt_api" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                      <Github size={16} />
+                      GitHub Repo
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Vehicle Damage Detection */}
+            <Card className="bg-slate-900 border-slate-700">
+              <CardHeader>
+                <CardTitle className="text-2xl text-slate-50 flex items-center gap-2">
+                  🚗 Vehicle Damage Detection
+                </CardTitle>
+                <p className="text-lg text-orange-400 font-semibold">Deep Learning | Computer Vision | Insurance Domain</p>
+              </CardHeader>
+              
+              <CardContent className="space-y-6">
+                <p className="text-slate-400 leading-relaxed">An AI-based solution to automatically detect vehicle damage from images, designed to support faster insurance claim assessments and reduce manual inspection efforts.</p>
+                
+                <div>
+                  <h4 className="font-semibold text-lg mb-4 text-slate-50">Key Highlights</h4>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="space-y-3">
+                      <div className="flex items-start">
+                        <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span className="text-slate-400">Built a deep learning model for image-based damage detection</span>
+                      </div>
+                      <div className="flex items-start">
+                        <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span className="text-slate-400">Designed REST APIs for inference using FastAPI</span>
+                      </div>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="flex items-start">
+                        <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span className="text-slate-400">Focused on real-time prediction and scalability</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 className="font-semibold text-lg mb-3 text-slate-50">Technologies Used</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Python</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">TensorFlow/Keras</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">FastAPI</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">OpenCV</Badge>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <Button asChild variant="outline" size="sm" className="bg-slate-800 border-orange-400/20 text-orange-400 hover:bg-orange-400/10">
+                    <a href="https://github.com/madhusudhanan-jayaram/deeplearning_vehicle_damage_detection" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                      <Github size={16} />
+                      GitHub Repo
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* WhatsApp Chat Analyzer */}
+            <Card className="bg-slate-900 border-slate-700">
+              <CardHeader>
+                <CardTitle className="text-2xl text-slate-50 flex items-center gap-2">
+                  💬 WhatsApp Chat Analyzer
+                </CardTitle>
+                <p className="text-lg text-orange-400 font-semibold">Natural Language Processing | Analytics</p>
+              </CardHeader>
+              
+              <CardContent className="space-y-6">
+                <p className="text-slate-400 leading-relaxed">An NLP-driven analytics platform that extracts insights from WhatsApp chat data, helping users understand communication patterns, sentiment trends, and engagement behavior.</p>
+                
+                <div>
+                  <h4 className="font-semibold text-lg mb-4 text-slate-50">Key Highlights</h4>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="space-y-3">
+                      <div className="flex items-start">
+                        <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span className="text-slate-400">Implemented NLP pipelines for text cleaning, analysis, and visualization</span>
+                      </div>
+                      <div className="flex items-start">
+                        <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span className="text-slate-400">Generated insights such as sentiment trends, message frequency, and activity timelines</span>
+                      </div>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="flex items-start">
+                        <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span className="text-slate-400">Designed a simple, interactive analytics dashboard</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 className="font-semibold text-lg mb-3 text-slate-50">Technologies Used</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Python</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">NLP libraries</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">pandas</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">matplotlib</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Streamlit</Badge>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <Button asChild variant="outline" size="sm" className="bg-slate-800 border-orange-400/20 text-orange-400 hover:bg-orange-400/10">
+                    <a href="https://github.com/madhusudhanan-jayaram/whatsapp_analyser" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                      <Github size={16} />
+                      GitHub Repo
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Stock Price Prediction */}
+            <Card className="bg-slate-900 border-slate-700">
+              <CardHeader>
+                <CardTitle className="text-2xl text-slate-50 flex items-center gap-2">
+                  📈 Stock Price Prediction
+                </CardTitle>
+                <p className="text-lg text-orange-400 font-semibold">Time Series Forecasting</p>
+              </CardHeader>
+              
+              <CardContent className="space-y-6">
+                <p className="text-slate-400 leading-relaxed">A machine learning project focused on forecasting stock price movements using historical data and time-series modeling techniques.</p>
+                
+                <div>
+                  <h4 className="font-semibold text-lg mb-4 text-slate-50">Key Highlights</h4>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="space-y-3">
+                      <div className="flex items-start">
+                        <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span className="text-slate-400">Built predictive models using historical stock market data</span>
+                      </div>
+                      <div className="flex items-start">
+                        <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span className="text-slate-400">Applied feature engineering and time-series analysis</span>
+                      </div>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="flex items-start">
+                        <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span className="text-slate-400">Evaluated model performance using standard regression metrics</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 className="font-semibold text-lg mb-3 text-slate-50">Technologies Used</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Python</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">pandas</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">scikit-learn</Badge>
+                    <Badge className="bg-orange-400/10 text-orange-400 border border-orange-400/20">Time-series modeling</Badge>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <Button asChild variant="outline" size="sm" className="bg-slate-800 border-orange-400/20 text-orange-400 hover:bg-orange-400/10">
+                    <a href="https://github.com/madhusudhanan-jayaram/stock_prediction_time_series" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                      <Github size={16} />
+                      GitHub Repo
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
             </TabsContent>
           </Tabs>
         </div>
