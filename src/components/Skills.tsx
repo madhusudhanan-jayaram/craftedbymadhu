@@ -32,7 +32,7 @@ export const Skills = () => {
   const cloudDevOpsSkills = [
     "Kubernetes & Container Orchestration",
     "CI/CD Pipelines & Automation",
-    "Cloud-Native Deployments (AWS / Azure / GCP concepts)",
+    "Cloud-Native Deployments (AWS / GCP concepts)",
     "Infrastructure as Code & Environment Management",
     "Monitoring, Logging & Observability",
   ];
