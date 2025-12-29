@@ -18,9 +18,9 @@ export const Projects = () => {
           </div>
           
           <Tabs defaultValue="enterprise" className="w-full">
-            <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-8">
-              <TabsTrigger value="enterprise">Enterprise Projects</TabsTrigger>
-              <TabsTrigger value="ai">AI Personal Projects</TabsTrigger>
+            <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-8 bg-slate-900 border border-slate-700">
+              <TabsTrigger value="enterprise" className="data-[state=active]:bg-orange-400 data-[state=active]:text-white">Enterprise Projects</TabsTrigger>
+              <TabsTrigger value="ai" className="data-[state=active]:bg-orange-400 data-[state=active]:text-white">AI Personal Projects</TabsTrigger>
             </TabsList>
             
             <TabsContent value="enterprise" className="space-y-8">
