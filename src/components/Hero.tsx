@@ -58,8 +58,8 @@ export const Hero = () => {
                   <div className="absolute inset-4 bg-gradient-to-br from-orange-400 to-orange-500 rounded-full"></div>
                   
                   {/* Profile image container */}
-                  <div className="relative w-full h-full rounded-full overflow-hidden bg-slate-800 p-3 group cursor-pointer border-4 border-slate-700" onClick={triggerFileInput}>
-                    <div className="w-full h-full rounded-full overflow-hidden bg-slate-700 flex items-center justify-center relative">
+                  <div className="relative w-full h-full rounded-full overflow-hidden bg-slate-800 p-3 border-4 border-slate-700">
+                    <div className="w-full h-full rounded-full overflow-hidden bg-slate-700 flex items-center justify-center">
                       {profileImage ? (
                         <img 
                           src={profileImage} 
@@ -71,11 +71,6 @@ export const Hero = () => {
                           <User size={80} />
                         </div>
                       )}
-                      
-                      {/* Upload overlay */}
-                      <div className="absolute inset-0 bg-black/50 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <Upload className="text-white" size={32} />
-                      </div>
                     </div>
                   </div>
                 </div>
