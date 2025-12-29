@@ -64,8 +64,8 @@ export const Skills = () => {
       <CardContent>
         <ul className="space-y-2">
           {skills.map((skill) => (
-            <li key={skill} className="flex items-start gap-2">
-              <span className="text-orange-400 mt-1">•</span>
+            <li key={skill} className="flex items-start gap-3">
+              <div className="w-1.5 h-1.5 rounded-full bg-orange-400 mt-2 flex-shrink-0"></div>
               <span className="text-sm text-slate-300">{skill}</span>
             </li>
           ))}
