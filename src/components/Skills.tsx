@@ -31,6 +31,7 @@ export const Skills = () => {
 
   const cloudDevOpsSkills = [
     "Kubernetes & Container Orchestration",
+    "OpenShift Container Platform",
     "CI/CD Pipelines & Automation",
     "Cloud-Native Deployments (AWS / GCP concepts)",
     "Infrastructure as Code & Environment Management",
