@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { TrendingUp, CheckCheck, Award, Brain } from "lucide-react";
+import { TrendingUp, Award, Brain } from "lucide-react";
 
 export const Statistics = () => {
   const stats = [{
@@ -7,11 +7,6 @@ export const Statistics = () => {
     value: "18+",
     label: "Years Experience",
     description: "Professional development"
-  }, {
-    icon: CheckCheck,
-    value: "5",
-    label: "Enterprise Projects Completed",
-    description: "Successful deliveries"
   }, {
     icon: Brain,
     value: "3",
@@ -37,7 +32,7 @@ export const Statistics = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {stats.map((stat, index) => {
               const IconComponent = stat.icon;
               return (
