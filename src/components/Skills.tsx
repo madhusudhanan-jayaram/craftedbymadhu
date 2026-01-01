@@ -76,19 +76,19 @@ export const Skills = () => {
   );
 
   return (
-    <section id="skills" className="py-20 bg-slate-900">
-      <div className="container mx-auto px-4">
+    <section id="skills" className="py-12 md:py-20 bg-slate-900">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-slate-50 mb-4">
+          <div className="text-center mb-10 md:mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-50 mb-4">
               My <span className="text-orange-400">Skills</span>
             </h2>
-            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+            <p className="text-base md:text-lg text-slate-400 max-w-2xl mx-auto px-4">
               A comprehensive overview of my technical expertise and professional capabilities.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             <SkillCard
               title="AI & Generative Intelligence"
               skills={aiGenerativeSkills}

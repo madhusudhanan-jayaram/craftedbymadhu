@@ -24,41 +24,41 @@ export const Hero = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-slate-900">
-      <div className="container mx-auto px-4 relative z-10 pt-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-20 pb-16 md:pt-24">
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left content */}
-            <div className="text-slate-50 space-y-8">
-              <div className="space-y-6">
+            <div className="text-slate-50 space-y-6 md:space-y-8 order-2 lg:order-1 text-center lg:text-left">
+              <div className="space-y-4 md:space-y-6">
                 <div className="space-y-2">
-                  <p className="text-orange-400 font-medium text-lg">Hello, I'm</p>
-                  <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
+                  <p className="text-orange-400 font-medium text-base md:text-lg">Hello, I'm</p>
+                  <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
                     Madhu
                   </h1>
-                  <p className="text-2xl lg:text-3xl text-slate-300 font-medium">
+                  <p className="text-xl sm:text-2xl lg:text-3xl text-slate-300 font-medium">
                     AI & Cloud Transformation Strategist
                   </p>
                 </div>
                 
-                <p className="text-lg text-slate-400 max-w-lg leading-relaxed">
+                <p className="text-base md:text-lg text-slate-400 max-w-lg mx-auto lg:mx-0 leading-relaxed">
                   I'm an AI & Cloud Transformation Strategist with deep experience across Collections, Payments, Acquisitions, Lending, Customer Service, and Feedback applications in the Banking & Financial Services domain.
                 </p>
-                <p className="text-lg text-slate-400 max-w-lg leading-relaxed">
+                <p className="text-base md:text-lg text-slate-400 max-w-lg mx-auto lg:mx-0 leading-relaxed">
                   I specialize in application governance, modernization, and cloud-first transformation — blending security, scalability, and innovation to deliver meaningful digital impact.
                 </p>
               </div>
             </div>
 
             {/* Right side - Profile image */}
-            <div className="relative flex justify-center lg:justify-end">
+            <div className="relative flex justify-center order-1 lg:order-2">
               <div className="relative">
                 {/* Main profile container */}
-                <div className="relative w-80 h-80 lg:w-96 lg:h-96">
+                <div className="relative w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96">
                   {/* Background decorative shape */}
-                  <div className="absolute inset-4 bg-gradient-to-br from-orange-400 to-orange-500 rounded-full"></div>
+                  <div className="absolute inset-3 sm:inset-4 bg-gradient-to-br from-orange-400 to-orange-500 rounded-full"></div>
                   
                   {/* Profile image container */}
-                  <div className="relative w-full h-full rounded-full overflow-hidden bg-slate-800 p-3 border-4 border-slate-700">
+                  <div className="relative w-full h-full rounded-full overflow-hidden bg-slate-800 p-2 sm:p-3 border-2 sm:border-4 border-slate-700">
                     <div className="w-full h-full rounded-full overflow-hidden bg-slate-700 flex items-center justify-center">
                       {profileImage ? (
                         <img 

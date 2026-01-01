@@ -1,19 +1,19 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 export const About = () => {
-  return <section id="about" className="py-20 bg-slate-900">
-      <div className="container mx-auto px-4">
+  return <section id="about" className="py-12 md:py-20 bg-slate-900">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-slate-50 mb-4">
+            <div className="text-center mb-10 md:mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-50 mb-4">
               About <span className="text-orange-400">Me</span>
             </h2>
-            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+            <p className="text-base md:text-lg text-slate-400 max-w-2xl mx-auto px-4">
               Application Architect specializing in AI-driven and cloud-native systems.
             </p>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="space-y-8">
               <Card className="bg-slate-800 border-slate-700">
                 <CardContent className="p-6">
@@ -40,8 +40,8 @@ export const About = () => {
               </div>
             </div>
             
-            <div className="space-y-6">
-              <div className="grid grid-cols-2 gap-6">
+            <div className="space-y-6 mt-8 lg:mt-0">
+              <div className="grid grid-cols-2 gap-4 sm:gap-6">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-orange-400 mb-2">4+</div>
                   <div className="text-slate-400">Projects Completed</div>

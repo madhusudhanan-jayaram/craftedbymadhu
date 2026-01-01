@@ -73,19 +73,19 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-slate-900">
-      <div className="container mx-auto px-4">
+    <section id="contact" className="py-12 md:py-20 bg-slate-900">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-slate-50 mb-4">
+          <div className="text-center mb-10 md:mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-50 mb-4">
               Get In <span className="text-orange-400">Touch</span>
             </h2>
-            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+            <p className="text-base md:text-lg text-slate-400 max-w-2xl mx-auto px-4">
               Ready to discuss AI innovation, technology leadership, or potential collaborations? I'd love to hear from you.
             </p>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Contact Information */}
             <div className="space-y-8">
               <Card className="bg-slate-800 border-slate-700">
